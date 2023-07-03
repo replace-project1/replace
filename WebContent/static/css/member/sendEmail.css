@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Pretendard,'Pretendard JP','Pretendard Std',-apple-system,system-ui,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,'Apple SD Gothic Neo','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+.bigbox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    align-items: center;
+}
+
+.divCenterBox{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+.divbox {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    flex-direction: column;
+    -webkit-box-pack: center;
+    align-items: flex-end;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+    border-radius: 8px;
+}
+
+.divbox::-webkit-scrollbar {
+    display: none;
+  }
+
+  .upperContainer {
+    padding: 0px 20px;
+    height: 64px;
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .upperText{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .formbox {
+    overflow: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .emailSend {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.0195em;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .infoMsg {
+    color: #888;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.0056em;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin: 0px 0px 16px;
+  }
+
+  .useremailbox {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0px;
+    border-radius: 4px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .useremail {
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing:0.0056em;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #36f;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.buttonText {
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.0056em;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+}

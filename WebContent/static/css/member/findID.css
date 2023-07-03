@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+* {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Pretendard,'Pretendard JP','Pretendard Std',-apple-system,system-ui,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,'Apple SD Gothic Neo','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+.bigbox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    align-items: center;
+}
+
+.divCenterBox{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+.divbox {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    flex-direction: column;
+    -webkit-box-pack: center;
+    align-items: flex-end;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+    border-radius: 8px;
+}
+
+.divbox::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text {
+    color: #888;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.0145em;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.telSelectbox {
+    height: 50px;
+    min-height: 50px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.telSelect {
+    padding-left: 12px;
+    width: 100%;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 1;
+    text-align: left; 
+    position: relative;
+    z-index: 2;
+}
+
+.telSelect option {
+    text-align: left;
+  }
+
+svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+    position: absolute;
+    top: 223px;
+    right: 37px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+input {
+    text-align: left;
+}
+
+.telinputBox{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.telinput{
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.telinputButton{
+        height: 50px;
+        min-height: 50px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        margin-left: 10px;
+        padding: 0px 15px;
+        width: auto;
+        flex: 0 0 auto;
+        border-radius: 5px;
+        border: 1px solid #e1e2e3;
+        color: #ccc;
+    
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,1190 @@
+@charset "UTF-8";
+
+:root {
+    --nav-height: 50px;
+}
+
+html {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body {
+    margin: 0 important;
+    font-size: 14px;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.42857143;
+    font-family: Pretendard Variable,Pretendard JP Variable,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button, div, h1, h2, h3, h4, h5, h6, input, p, select, span, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a, a:active, a:hover, a:visited {
+    color: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.NavBar_className {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    z-index: 800;
+}
+
+.MainBar_MainBar {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1060px;
+    height: 50px;
+  }
+
+.MainBar_MainBar_nav, .MainBar_MainBar_nav_top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.MainBar_MainBar_nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.MainBar_MainBar_nav_top_logo {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.MainBar_MainBar_nav_top .MainBar_hamberger {
+    margin-top: -2px;
+    margin-right: 15px;
+}
+
+.MainBar_MainBar_nav_top .MainBar_hamberger img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: bicubic;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.MainBar_MainBar_logo {
+    display: block;
+}
+
+.MainBar_MainBar_nav_top>button[id=gnbSignupBtn] {
+    display: none;
+    color: #36f;
+    font-size: 14px;
+    line-height: 32px;
+    height: 34px;
+    border: 1px solid #36f;
+    border-radius: 17px;
+    padding: 0 14px;
+}
+
+.Menu_className__gGcYQ {
+    height: inherit;
+    text-align: center;
+    margin: 0;
+}
+
+.Menu_className__gGcYQ li {
+    height: inherit;
+    display: inline-block;
+    position: relative;
+}
+
+.Menu_className__gGcYQ li a {
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+}
+
+.Menu_className__gGcYQ li:after {
+    height: 100%;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Menu_className__gGcYQ li {
+    height: inherit;
+    display: inline-block;
+    position: relative;
+}
+
+.Aside_className.isLoggedIn {
+    padding: 9px 0;
+}
+
+.Aside_className {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.Aside_className>ul {
+    height: 100%;
+    margin: 0;
+}
+
+.Aside_className>ul li .searchButton {
+    position: relative;
+    margin-top: 5px;
+}
+
+.Aside_className>ul li>* {
+    height: 100%;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.Aside_className>ul li {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.Aside_hasNewMywantedAlarm__p2Tfv, .Aside_hasNewNotificationAlarm {
+    position: relative;
+}
+
+.Aside_className>ul li .notiButton {
+    position: relative;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.Aside_hasNewNotificationAlarm>span {
+    top: -4px;
+    left: 24px;
+}
+
+.Aside_hasNewMywantedAlarm__p2Tfv>span, .Aside_hasNewNotificationAlarm>span {
+    position: absolute;
+    top: -2px;
+    left: 22px;
+    padding: 0!important;
+}
+
+.Badge_Badge {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background: #36f;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.Aside_className>ul .profileBox {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.Aside_className>ul li .profileButton {
+    height: 32px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    vertical-align: top;
+    padding: 0;
+    margin-right: 11px;
+}
+
+.Aside_className>ul li .profileButton .avatarBorder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Aside_className>ul li .profileButton .avatarBorder>div {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Aside_className>ul .leftDivision {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.Aside_className>ul .leftDivision:before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #e1e2e3;
+    margin: auto 10px;
+}
+
+.Aside_className>ul li .dashboardButton {
+    font-size: 13px;
+    color: #666;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.Aside_className>ul li a {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 32px;
+}
+
+.Aside_className>ul li .menuButton {
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.Padding_padding {
+    height: 50px;
+}
+
+.KakaoBanner_kakaoBanner {
+    width: 100%;
+    height: 70px;
+    background-color: #252930;
+    background-image: url(https://static.wanted.co.kr/images/kakao_banner.png);
+    background-position-x: 11%;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper {
+    width: 90%;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerContent {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerContent>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerContent>p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ccc;
+    padding-top: 2px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: auto;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 .KakaoBanner_closeButton__jLvLo {
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    background-color: transparent;
+    width: auto;
+    margin: 2px 9px 0 0;
+}
+.style_wrapper__IgK7U {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    border: 0;
+    border-radius: 27px;
+    background-color: #36f;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 .KakaoBanner_divider__JhMwE:after {
+    display: block;
+    content: "|";
+    color: #999;
+    font-size: 15px;
+    margin: 2px 11px 0 0;
+}
+
+.KakaoBanner_divider__JhMwE:after {
+    display: block;
+    content: "|";
+    color: #999;
+    font-size: 15px;
+    margin: 2px 11px 0 0;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 .KakaoBanner_connectButton__9iUeW {
+    width: 105px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    background-color: #22262b;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1px;
+}
+
+
+/* .style_wrapper__IgK7U svg {
+    margin-right: 10px;
+} */
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: auto;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 .KakaoBanner_closeButton__jLvLo {
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    background-color: transparent;
+    width: auto;
+    margin: 2px 9px 0 0;
+}
+
+.KakaoBanner_kakaoBanner .KakaoBanner_bannerWrapper .KakaoBanner_bannerButton__mXtM5 .KakaoBanner_divider__JhMwE:after {
+    display: block;
+    content: "|";
+    color: #999;
+    font-size: 15px;
+    margin: 2px 11px 0 0;
+}
+
+.SvgIcon_SvgIcon__root__8vwon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+}
+
+.SvgIcon_SvgIcon__root__svg__DKYBi {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+}
+
+.MyWanted_MyWanted {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1060px;
+    padding: 0 0 90px;
+}
+
+.MyWanted_MyWanted_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 50px 0 20px;
+}
+
+.MyWanted_MyWanted_container {
+    position: relative;
+}
+
+.Aside_Aside {
+    top: 0;
+    left: 0;
+    width: 250px;
+    position: absolute;
+}
+
+.Aside_Aside_contents {
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+}
+
+.Aside_Point {
+    padding: 30px 20px;
+}
+
+.Aside_Aside_contents>div {
+    border-top: 1px solid #e1e2e3;
+}
+
+.Aside_Profile {
+    padding: 42px 20px 30px;
+    text-align: center;
+}
+
+.Avatar_Avatar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #dbdcdf;
+    font-size: 1.538em;
+    line-height: 1;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Avatar_Avatar__sizeMedium {
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+}
+
+.Aside_Profile_avatar {
+    width: 77px!important;
+    height: 77px!important;
+    margin: auto;
+}
+
+.Avatar_Avatar__img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    color: transparent;
+}
+
+.Aside_Profile_info>dl {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.Aside_Profile_info>dl>dt {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Aside_Profile_info>dl>dd:first-of-type {
+    padding-top: 20px;
+}
+
+.Aside_Profile_info>dl>dd {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 8px;
+    color: #767676;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Aside_InterestTags {
+    border-radius: 19px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.Aside_InterestTags>a {
+    display: block;
+    padding: 0 22px 0 16px;
+    background: #f2f4f7;
+    position: relative;
+}
+
+.Aside_InterestTags>a>p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 38px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.Aside_InterestTags>a>p>em {
+    font-weight: 700;
+    margin-right: 8px;
+    font-style: normal;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.Aside_InterestTags>a>p>span.Aside_InterestTags1 {
+    width: calc(100% - 26px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Aside_InterestTags>a>p>span {
+    margin-right: 5px;
+}
+
+.Aside_InterestTags>a>svg {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    color: #666;
+}
+
+.Aside_Point>a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.Aside_Point>a>span {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.Aside_Point>a>strong {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.Aside_Aside_contents .Aside_LevelProfile {
+    display: none;
+}
+
+.Aside_Aside_contents>div {
+    border-top: 1px solid #e1e2e3;
+}
+
+.ProfileLevel_ProfileLevel {
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 26px 0 31px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.ProfileLevel_ProfileLevel .ProfileLevel_top {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 30px 30px;
+}
+
+.ProfileLevel_ProfileLevel .ProfileLevel_top .ProfileLevel_title {
+    font-size: 18px;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    color: #333;
+}
+
+.ProfileLevel_ProfileLevel .ProfileLevel_top .ProfileLevel_title>span {
+    margin: 0 0 3.5px 6px;
+    vertical-align: middle;
+}
+
+.Badge_Badge {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    background: #36f;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.ProgressBar_profile {
+    margin: 0 30px;
+    background: rgba(239,241,251,.44);
+    border-radius: 5px;
+    padding: 30px 29px 25px 30px;
+}
+
+.ProgressBar_profile .ProgressBar_levelTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+}
+
+.ProgressBar_profile .ProgressBar_levelTitle .ProgressBar_levelQuestion {
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.ProgressBar_profile .ProgressBar_levelTitle .ProgressBar_levelQuestion>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProgressBar_profile .ProgressBar_progress {
+    margin: 20px 10px 10px 0;
+    background: #ececec;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+}
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_progressBar.level3 {
+    width: calc(71.4285% - 2px);
+    background-image: -webkit-gradient(linear,left top,right top,from(#94afff),color-stop(21%,#7b9cff),color-stop(60%,#547fff),color-stop(99%,#334dff),color-stop(138%,#4e5bfd));
+    background-image: linear-gradient(90deg,#94afff,#7b9cff 21%,#547fff 60%,#334dff 99%,#4e5bfd 138%);
+}
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_progressBar {
+    position: absolute;
+    height: 100%;
+    width: calc(14.2857% - 2px);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_progressLines {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_progressLines>li {
+    width: 2px;
+    height: 10px;
+    margin-left: calc(14.2587% - 2px);
+    background: #fefefe;
+    z-index: 10;
+}
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_levelStar {
+    margin-left: 100%;
+    left: -17px;
+}
+
+
+.ProgressBar_profile .ProgressBar_progress .ProgressBar_profileLevel {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -12px;
+    top: -6px;
+    z-index: 20;
+    margin-left: 71.4285%;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ProgressBar_profile .ProgressBar_levelText {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.ProgressBar_profile .ProgressBar_levelText>p:first-child {
+    width: 13.5%;
+}
+
+.ProgressBar_profile .ProgressBar_levelText>p {
+    width: 28%;
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    margin-left: 4%;
+}
+
+.LevelButtons_subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 30px 30px 0;
+}
+
+.LevelButtons_button__wrapper {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.LevelButtons_button {
+    padding: 2px 24px 0;
+    height: 48px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.Button_Button__containedSizeMedium__c2z9c, .Button_Button__outlinedSizeMedium{
+    padding: 0 20px;
+    min-width: 64px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Button_Button__outlined, .Button_Button__outlinedPrimary {
+    --button-color: #36f;
+    color: var(--button-color);
+    -webkit-box-shadow: 0 0 0 1px var(--button-color) inset;
+    box-shadow: 0 0 0 1px var(--button-color) inset;
+}
+
+.Button_Button__outlined {
+    border-radius: 1000px;
+    background-color: #fff;
+}
+
+.Button_Button__root {
+    --button-color: #171717;
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: normal;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.Button_Button__label {
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    color: inherit;
+}
+
+.Button_Button__interaction {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: 0;
+    background-color: var(--button-color);
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    will-change: opacity;
+}
+
+.CareerConnectBanner_CareerConnectBanner {
+    position: relative;
+    width: 100%;
+    height: 103px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #2b4bc8;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.CareerConnectBanner_CareerConnectBanner>picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+.CareerConnectBanner_CareerConnectBanner__Banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 32px 40px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #fff;
+}
+
+.CareerConnectBanner_CareerConnectBanner__Banner__Content {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/* .CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1>p {
+    z-index: 1;
+} */
+
+.CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1>strong {
+    z-index: 1;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #2b4bc8;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 11px 20px;
+}
+
+
+.CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1>picture {
+    z-index: 0;
+    position: absolute;
+    right: 200px;
+    bottom: -7px;
+    width: 124px;
+    height: 100px;
+}
+
+.SvgIcon_SvgIcon__root__8vwon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+}
+
+.SvgIcon_SvgIcon__root__svg__DKYBi {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+}
+
+.CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1>picture {
+    z-index: 0;
+    position: absolute;
+    right: 200px;
+    bottom: -7px;
+    width: 124px;
+    height: 100px;
+}
+
+.CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1>picture>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Aside_Aside_contents>div {
+    border-top: 1px solid #e1e2e3;
+}
+
+.Aside_MatchupStatus>h2 {
+    display: none;
+}
+
+.Aside_MatchupStatus_container {
+    position: relative;
+    padding: 30px 25px 30px 20px;
+}
+
+.Aside_MatchupStatus_container>a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    position: relative;
+}
+
+.Aside_MatchupStatus_container_infoIcon {
+    position: relative;
+    top: 1px;
+    margin-left: 6px;
+}
+
+.Aside_MatchupStatus_container>a>strong {
+    position: relative;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.Aside_MatchupStatus_container>a>span {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.Aside_Aside_contents>div {
+    border-top: 1px solid #e1e2e3;
+}
+
+.Aside_Setting {
+    padding: 30px 20px;
+}
+
+.Aside_Setting>a {
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.Aside_Aside_banner {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.CareerMapBanner_CareermapBanner {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-image: url(https://static.wanted.co.kr/images/careermap/careermapBanner.png);
+    background-size: 100% auto;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    white-space: pre-wrap;
+}
+
+.Body_Body {
+    padding-left: 270px;
+}
+
+.Summary_Summary {
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    margin: 0 0 20px;
+    padding: 26px 0 34px;
+}
+
+.Summary_Summary_title {
+    font-size: 18px;
+    padding: 0 32px 26px;
+    font-weight: 700;
+}
+
+.Summary_Summary_status>li:first-of-type {
+    border: none;
+}
+
+.Summary_Summary_status>li {
+    float: left;
+    width: 25%;
+    border-left: 1px solid #e1e2e3;
+}
+
+.Summary_Summary_status>li>a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Summary_Summary_status>li>a>em {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    padding-bottom: 11px;
+    font-style: normal;
+}
+
+.Summary_Summary_status>li>a>span {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.Summary_Summary_status:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.Body_levelProfile {
+    display: block;
+}
+
+.ProfileLevel_ProfileLevel .ProfileLevel_top {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 30px 30px;
+}
+
+.Body_Contents__ec_MY {
+    background: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+}
