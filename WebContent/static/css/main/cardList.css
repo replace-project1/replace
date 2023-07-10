@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,button,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     margin: 0;
     padding: 0;
@@ -105,7 +106,7 @@ a {
 .RecruitMainCardList_container.RecruitMainCardList_platinumvip .RecruitMainCardList_card-wrap .RecruitMainCardList_card-content .RecruitMainCardList_company-img-logo-wrap img {
     max-height: 60px;
 }
-.Image_custom-image--intrinsic>img {
+.Image_custom-image_intrinsic>img {
     max-width: 100%;
     height: auto;
 }
@@ -118,10 +119,10 @@ a {
     overflow: hidden;
     white-space: nowrap;
 }
-.Typography_typography--regular {
+.Typography_typography_regular {
     font-weight: 400;
 }
-.Typography_typography--B3 {
+.Typography_typography_B3 {
     font-size: .875rem;
     letter-spacing: -.005em;
     line-height: 22px;
@@ -132,10 +133,10 @@ a {
     height: 52px;
     overflow: hidden;
 }
-.Typography_typography--medium {
+.Typography_typography_medium {
     font-weight: 500;
 }
-.Typography_typography--B1 {
+.Typography_typography_B1 {
     font-size: 1.125rem;
     letter-spacing: -.005em;
     line-height: 26px;
@@ -152,16 +153,19 @@ a {
 .RecruitMainCardList_container .RecruitMainCardList_card-wrap .RecruitMainCardList_card-content .RecruitMainCardList_card-footer-wrap .RecruitMainCardList_trainee {
     color: #6a6a6a;
 }
-.Typography_typography--bold {
+.Typography_typography_bold {
     font-weight: 700;
 }
-.Typography_typography--medium {
+.Typography_typography_medium {
     font-weight: 500;
 }
 .More-View{
     font-size: 15px;
     opacity: 0.5;
 }
+
+
+
 
 
 

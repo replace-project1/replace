@@ -1,0 +1,731 @@
+@charset "UTF-8";
+@media(min-width: 768px)and (max-width:991px) {
+    .JobDetail {
+        background:#fff;
+    }
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobDetail {
+        background:#fff;
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobDetail {
+        background:#fff;
+    }
+}
+
+.JobDetail_contentWrapper {
+    max-width: 1060px; 
+}
+
+.JobDetail_contentWrapper:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobDetail_contentWrapper {
+        width:90%; 
+    }
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobDetail_contentWrapper {
+        width:90%; 
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobDetail_contentWrapper {
+        width:87.72%; 
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobDetail_contentWrapper {
+        margin:0 auto;
+        padding: 20px 0 80px; 
+    }
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobDetail_contentWrapper {
+        margin:0 auto;
+        padding: 20px 0 80px; 
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobDetail_contentWrapper {
+        margin:0 auto;
+        padding: 20px 0 80px; 
+    }
+}
+
+.JobDetail_relativeWrapper {
+    position: relative
+}
+
+.JobDetail_footer_wCHYt {
+    display: none;
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobDetail_footer_wCHYt {
+        display:block
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobDetail_footer_wCHYt {
+        display:block
+    }
+}
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobContent_className {
+        display:inline-block;
+        width: calc(100% - 360px);
+        vertical-align: top
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobContent_className {
+        display:inline-block;
+        width: calc(100% - 360px);
+        vertical-align: top
+    }
+}
+
+.JobContent_divider {
+    margin: 0;
+}
+
+@media(max-width: 767px) {
+    .JobContent_descriptionWrapper {
+        padding:0 20px;
+        background: #fff
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobContent_descriptionWrapper {
+        padding:0 20px;
+        background: #fff
+    }
+}
+
+.JobContent_appliedLink_lKHLy {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    .JobContent_appliedLink_lKHLy {
+        display:block
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobContent_appliedLink_lKHLy {
+        display:block
+    }
+}
+
+.JobImage_JobImage {
+    position: relative;
+    overflow: hidden
+}
+
+.JobImage_JobImage_slides_ {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 4px;
+    height: auto;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain
+}
+
+.JobImage_JobImage_slides_::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; 
+}
+
+.JobImage_JobImage_slides_::-webkit-scrollbar-thumb {
+    background: #b5b5b5;
+    border-radius: 10px; 
+}
+
+.JobImage_JobImage_slides_::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.JobImage_JobImage_slide {
+    scroll-snap-align: start;
+    position: relative;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-bottom: 70%; 
+}
+
+.JobImage_JobImage_slide>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    outline: 1px solid rgba(0,0,0,.05);
+    outline-offset: -1px; 
+}
+
+.JobImage_JobImage_arrow {
+    position: absolute;
+    width: 9%;
+    height: 100%;
+    opacity: .7;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.JobImage_JobImage_arrow_left {
+    left: 0;
+}
+
+.JobImage_JobImage_arrow_left>svg {
+    display: block;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); 
+}
+
+.JobImage_JobImage_arrow_right {
+    right: 0;
+}
+
+.JobImage_JobImage_arrow_right>svg {
+    display: block
+}
+
+
+.BookmarkBtn_bookmarkBtn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #36f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #36f;
+    text-align: center
+}
+
+.BookmarkBtn_bookmarkBtn:lang(ja) {
+    letter-spacing: -1px; 
+}
+
+.BookmarkBtn_bookmarkBtn>svg {
+    margin-right: 8px; 
+}
+.JobHeader_className>h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    word-break: keep-all;
+    word-wrap: break-word
+}
+
+@media(max-width: 767px) {
+    .JobHeader_className>h2 {
+        font-size:18px; 
+    }
+}
+
+.JobHeader_className>div:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.JobHeader_className>div>h6 {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.JobHeader_className>div>h6:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+@media(max-width: 767px) {
+    .JobHeader_className>div>h6 {
+        font-size:11px; 
+    }
+}
+
+.JobHeader_className>div>h6>a {
+    color: #333;
+    position: relative;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    line-height: 1.4
+}
+
+.JobHeader_className>div>span {
+    padding: 0 10px;
+    position: relative;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #999
+}
+
+@media(max-width: 767px) {
+    .JobHeader_className>div>span {
+        padding:0;
+        margin-left: 0;
+    }
+}
+
+.JobHeader_className>div>span:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #e1e2e3;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+@media(max-width: 767px) {
+    .JobHeader_className>div>span:before {
+        display:none;
+    }
+}
+
+.JobHeader_dot {
+    margin: 0 5px;
+    top: -3px;
+    position: relative
+}
+@media(max-width: 767px) {
+    .JobHeader_pcLocationContainer {
+        display:none;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobHeader_pcLocationContainer {
+        display:none;
+    }
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobHeader_pcLocationContainer {
+        display:inline-block
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobHeader_pcLocationContainer {
+        display:inline-block
+    }
+}
+@media(min-width: 1200px) {
+    .JobDescription_JobDescription {
+        margin-bottom:60px;
+        padding-right: 20px; 
+    }
+}
+
+@media(max-width: 767px) {
+    .JobDescription_JobDescription {
+        margin:0;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobDescription_JobDescription {
+        margin:0;
+    }
+}
+
+.JobDescription_JobDescription h6,.JobDescription_JobDescription p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+@media(max-width: 767px) {
+    .JobDescription_JobDescription h6,.JobDescription_JobDescription p {
+        line-height:1.63;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobDescription_JobDescription h6,.JobDescription_JobDescription p {
+        line-height:1.63;
+    }
+}
+
+.JobDescription_JobDescription h6 {
+    margin: 20px 0 0;
+    font-weight: 600;
+}
+
+.JobDescription_JobDescription p {
+    color: #333;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobProcess_container {
+        width:340px;
+        position: fixed;
+        right: calc((100% - 1060px)/2); 
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobProcess_container {
+        width:340px;
+        position: fixed;
+        right: calc((100% - 1060px)/2); 
+    }
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobProcess_container {
+        right:5%; 
+    }
+}
+
+@media(max-width: 767px) {
+    .JobProcess_container {
+        display:none;
+    }
+}
+@media(min-width: 768px)and (max-width:991px) {
+    .JobProcess_container {
+        display:none;
+    }
+}
+.BeforeApplication_container>header {
+    border-radius: 3px; 
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .BeforeApplication_container>header {
+        width:340px;
+        border: 1px solid #e1e2e3;
+        background-color: #fff;
+        padding: 24px 20px; 
+    }
+}
+
+@media(min-width: 1200px) {
+    .BeforeApplication_container>header {
+        width:340px;
+        border: 1px solid #e1e2e3;
+        background-color: #fff;
+        padding: 24px 20px; 
+    }
+}
+
+.BeforeApplication_container>header>.divider {
+    height: 1px;
+    background: #e1e2e3;
+    border: none;
+    margin: 0 -20px; 
+}
+
+@media(max-width: 767px) {
+    .BeforeApplication_container>header>.divider {
+        display:none;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .BeforeApplication_container>header>.divider {
+        display:none;
+    }
+}
+
+.BeforeApplication_pcBookmarkBtn {
+    margin-bottom: 10px; 
+}
+
+@media(max-width: 767px) {
+    .BeforeApplication_pcBookmarkBtn {
+        display:none;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .BeforeApplication_pcBookmarkBtn {
+        display:none;
+    }
+}
+ApplyBtn_button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #36f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.ApplyBtn_closedButton {
+    color: rgba(255,255,255,.5);
+    background: #999;
+    cursor: not-allowed;
+}
+
+.ApplyBtn_container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+@media(max-width: 767px) {
+    .ApplyBtn_container {
+        padding:0 15px 15px; 
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .ApplyBtn_container {
+        padding:0 15px 15px;
+    }
+}
+
+.ApplyBtn_container_item {
+    -ms-flex-order: 0;
+    order: 0;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    display: block;
+}
+
+.ApplyBtn_container_item:first-child {
+    margin-right: 0px;
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .ApplyBtn_container_item:first-child {
+        display:block;
+    }
+}
+
+@media(min-width: 1200px) {
+    .ApplyBtn_container_item:first-child {
+        display:block;
+    }
+}
+
+.ApplyBtn_button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #36f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.ApplyBtn_closedButton {
+    color: rgba(255,255,255,.5);
+    background: #999;
+    cursor: not-allowed;
+}
+
+.JobWorkPlace_className {
+    margin: 40px 0;
+}
+
+@media(min-width: 992px)and (max-width:1199px) {
+    .JobWorkPlace_className {
+        margin-top:20px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .JobWorkPlace_className {
+        margin-top:20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .JobWorkPlace_className {
+        margin:0;
+        padding: 30px 0 15px;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobWorkPlace_className {
+        margin:0;
+        padding: 30px 0 15px;
+    }
+}
+
+.JobWorkPlace_className>div {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 767px) {
+    .JobWorkPlace_className>div {
+        margin-bottom:15px;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobWorkPlace_className>div {
+        margin-bottom:15px;
+    }
+}
+
+
+
+.JobWorkPlace_className .body,.JobWorkPlace_className .header {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+
+@media(max-width: 767px) {
+    .JobWorkPlace_className .body,.JobWorkPlace_className .header {
+        font-size:15px;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobWorkPlace_className .body,.JobWorkPlace_className .header {
+        font-size:15px;
+    }
+}
+
+.JobWorkPlace_className .header {
+    color: #999;
+    width: 80px;
+}
+
+@media(max-width: 767px) {
+    .JobWorkPlace_className .header {
+        width:70px;
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobWorkPlace_className .header {
+        width:70px;
+    }
+}
+
+.JobWorkPlace_className .body {
+    color: #333;
+    width: calc(100% - 85px);
+}
+
+@media(max-width: 767px) {
+    .JobWorkPlace_className .body {
+        width:calc(100% - 75px);
+    }
+}
+
+@media(min-width: 768px)and (max-width:991px) {
+    .JobWorkPlace_className .body {
+        width:calc(100% - 75px);
+    }
+}
+.GoogleMap_GoogleMap {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.GoogleMap_GoogleMap>span {
+    display: block;
+    width: 100%;
+    padding-bottom: 40%;
+    background-color: #fbfbfb;
+    background-size: cover;
+    background-position: 50%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor
+}
+
+.NaverMap_NaverMap {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.NaverMap_NaverMap>img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%
+}

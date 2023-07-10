@@ -4,14 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>기업목록</title>
+<title>포지션 상세보기</title>
 	<link rel="stylesheet" href="../static/css/main/main.css" />
-   	<link rel="stylesheet" href="../static/css/main/menu.css" />
-    <link rel="stylesheet" href="../static/css/company-list/companyList.css" />
+    <link rel="stylesheet" href="../static/css/main/menu.css" />
+    <link rel="stylesheet" href="../static/css/company-detail/company-detail.css" />
 </head>
 <body>
-	
-    <!-- ----------------- 상단 배너 시작 ----------------- -->
+ <!-- ----------------- 상단 배너 시작 ----------------- -->
     <div
       class="NavBar_className"
       style="position: fixed; padding-right: initial">
@@ -649,291 +648,129 @@
     </div>
     <div class="Padding_padding Padding_padding_isLoggedOut"></div>
     <!-- ----------------- 상단 배너 끝 ----------------- -->
+
     <main>
-      <!-- ----------------- 기업 목록 시작--------------- -->
-      <div class="JobList">
-        <article class="CategoryNavbar_Container">
-          <div class="CategoryNavbar_Body">
-            <div>
-              <button type="button" class="JobGroup_JobGroup">
-                <span class="JobGroup_JobGroup_title">개발</span>
-                <span class="MoreButton_MoreButton">
-                  <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="MoreButton_MoreButton_icon">
-                    <path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z">
-                    </path>
+      <!-- ----------------- 기업 상세보기 시작--------------- -->
+      <div class="JobDetail">
+        <div class="JobDetail_contentWrapper">
+          <div class="JobDetail_relativeWrapper">
+            <div class="JobContent_className">
+              <section class="JobImage_JobImage">
+                <button type="button" class="JobImage_JobImage_arrow JobImage_JobImage_arrow_left">
+                  <svg width="24" height="24" viewBox="0 0 12 12">
+                    <path fill="#b5b5b5" d="M3.345 9.72a.75.75 0 0 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06l-4.25-4.25a.75.75 0 0 0-1.06 1.06L7.065 6l-3.72 3.72z"></path>
                   </svg>
-                </span>
-              </button>
-              <section class="JobGroupOverlay_JobGroupOverlay isKR">
-                <a href="/wdlist" class="JobGroupOverlay_JobGroupOverlay_all">전체</a>
-                <ul>
-                  <li>
-                    <a href="/wdlist/518" class="JobGroupItem_JobGroupItem">
-                      개발
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      경영·비즈니스
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      마케팅·광고
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      디자인
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      영업
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      고객서비스·리테일
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      미디어
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      게임 제작
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      엔지니어링·설계
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      HR
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      금융
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      제조·생산
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      물류·무역
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      의료·제약·바이오
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      교육
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      법률·법집행기관
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      식·음료
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      건설·시설
-                   </a>
-                  </li>
-                  <li>
-                    <a href="/wdlist/507" class="JobGroupItem_JobGroupItem">
-                      공공·복지
-                   </a>
-                  </li>
-                </ul>
+                </button>
+                <button type="button" class="JobImage_JobImage_arrow JobImage_JobImage_arrow_right">
+                  <svg width="24" height="24" viewBox="0 0 12 12">
+                    <path fill="#b5b5b5" d="M3.345 9.72a.75.75 0 0 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06l-4.25-4.25a.75.75 0 0 0-1.06 1.06L7.065 6l-3.72 3.72z"></path>
+                  </svg>
+                </button>
+                <div class="JobImage_JobImage_slides_">
+                  <div class="JobImage_JobImage_slide">
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5048%2Fxnuygnxtskdletve_1080_790.jpg&amp;w=1000&amp;q=75" alt="기업 소개 이미지">
+                  </div>
+                </div>
               </section>
-            </div>
-            <div class="JobCategory_JobCategory">
-              <button type="button" class="JobCategory_JobCategory_btn">
-                <span class="JobCategory_JobCategory_btn_title">개발 전체</span>
-                <span class="MoreButton_MoreButton">
-                  <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" class="MoreButton_MoreButton_icon">
-                    <path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z">
-                    </path>
-                  </svg>
-                </span>
-              </button>
-              <section class="JobCategoryOverlay_JobCategoryOverlay">
-                <div class="JobCategoryOverlay_JobCategoryOverlay_top">
-                  <p class="JobCategoryOverlay_JobCategoryOverlay_top_title">
-                    직무를 선택해 주세요. (최대 5개 선택 가능)
+              <section class="JobHeader_className">
+                <h2>백엔드 개발자</h2>
+                <div>
+                  <h6 style="max-width: calc(100% - 88px);">
+                    <a href="/company/5048" class="">기업이름</a>
+                  </h6>
+                  <span class="JobHeader_pcLocationContainer">
+                    서울
+                    <span class="JobHeader_dot">.</span>
+                    한국
+                  </span>
+                </div>
+              </section>
+              <div class="JobContent_descriptionWrapper">
+                <section class="JobDescription_JobDescription">
+                  <p>
+                    <span>
+                      소개정보
+                      <br>
+                      소개정보
+                      <br>
+                      소개정보
+                      <br>
+                      <br>
+                      1. 소개정보
+                      <br>
+                      2. 소개정보
+                      <br>
+                      3. 소개정보
+                      <br>
+                      4. 소개정보
+                    </span>
                   </p>
-                  <div class="JobCategoryOverlay_JobCategoryOverlay_top_list">
-                    <button type="button" class="JobCategoryItem_JobCategoryItem JobCategoryItem_clicked">
-                      개발 전체
-                    </button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">웹 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">서버 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">소프트웨어 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">프론트엔드 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">자바 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">C,C++ 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">파이썬 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">Node.js 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">안드로이드 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">머신러닝 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">iOS 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">DevOps / 시스템 관리자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">데이터 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">시스템,네트워크 관리자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">개발 매니저</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">데이터 사이언티스트</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">기술지원</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">QA,테스트 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">임베디드 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">보안 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">빅데이터 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">프로덕트 매니저</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">하드웨어 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">PHP 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">크로스플랫폼 앱 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">블록체인 플랫폼 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">DBA</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">영상,음성 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">웹 퍼블리셔</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">.NET 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">ERP전문가</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">CTO,Chief Technology Officer</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">그래픽스 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">BI 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">VR 엔지니어</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">루비온레일즈 개발자</button>
-                    <button type="button" class="JobCategoryItem_JobCategoryItem">CIO,Chief Information Officer</button>
-                  </div>
-                </div>
-                <div class="JobCategoryOverlay_JobCategoryOverlay_bottom">
-                  <button class="Button_Button_root Button_Button_contained Button_Button_containedPrimary Button_Button_containedSizeMedium JobCategoryOverlay_JobCategoryOverlay_bottom_btn">
-                    <span class="Button_Button_label">선택 완료하기</span>
-                    <span class="Button_Button_interaction"></span>
-                  </button>
-                </div>
-              </section>
-            </div>
-          </div>
-        </article>
-        <div class="JobList_contentWrapper">
-          <div class="List_List List_wdlistCustom">
-            <div>
-              <div class="FilterInWdlist_container FilterInWdlist_FixedWithMainBar isLoggedIn">
-                <div class="FilterInWdlist_innerClassName">
-                  <div class="FilterInWdlist_SelectedButtonGroup">
-                    <button class="FilterButton_ButtonClassName FilterInWdlist_filterButton" type="button">
-                      <span class="FilterButton_title">
-                        지역
+                  <h6>주요업무</h6>
+                  <p>
+                    <span>
+                      ㆍ주요업무 상세 정보
+                    </span>
+                  </p>
+                </section>
+                <hr class="JobContent_divider">
+                <section class="JobWorkPlace_className">
+                  <div>
+                    <div>
+                      <span class="header">
+                        마감일
                       </span>
-                      <span class="ButtonDisplay_ButtonDisplay">
-                        한국
+                      <span class="body">
+                        상시
                       </span>
-                    </button>
-                    <div class="FilterInWdlist_jobSortSelectContainer FilterInWdlist_marginLeftAuto">
-                      <div class="Selector_select">
-                        <div class="Selector_customSelect">
-                          <button type="button" >
-                            최신순
-                            <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg">
-                              <path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333"></path>
-                            </svg>
-                          </button>
-                          <ul style="display: none;">
-                            <li>
-                              <button type="button" name="job.latest_order">
-                                최신순
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" name="job.compensation_order">
-                                보상금순
-                              </button>
-                            </li>
-                            <li>
-                              <button name="job.popularity_order" type="button">
-                                인기순
-                              </button>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="Selector_mobileIcon">
-                          <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333"></path>
-                          </svg>
-                        </div>
-                        <select class="Selector_mobileSelect">
-                          <option value="job.latest_order">
-                            최신순
-                          </option>
-                          <option value="job.compensation_order">
-                            보상금순
-                          </option>
-                          <option value="job.popularity_order">
-                            인기순
-                          </option>
-                        </select>
-                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="Divider_Divider_root List_divider">
-            <div class="List_List_container">
-              <ul>
-                <!-- -----------기업------------ -->
-                <li>
-                  <div class="Card_className">
-                    <a href="https://www.wanted.co.kr/wd/168540">
-                      <header style="background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15723%2Frugrc2qp0c4uc3yi_400_400.jpg&w=400&q=75);">
-                        <button type="button" class="bookmarkBtn">
-                          <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
-                          </svg>
-                        </button>
-                      </header>
-                      <div class="body">
-                        <div class="job-card-position">(직종) [경력]</div>
-                        <div class="job-card-company-name">회사명</div>
-                        
-                        <div class="job-card-company-location">
-                          서울
-                          <span class="addressDot">
-                            .
-                          </span>
-                          <span>
-                            한국
-                          </span>
-                        </div>
-                        <div class="reward">채용보상금 100만원</div>
-                        <div class="Card_badge"></div>
-                      </div>
+                    <div>
+                      <span class="header">
+                        근무지역
+                      </span>
+                      <span class="body">
+                        마포구 백범로31길 21, 서울창업허브 별관 301호
+                      </span>
+                    </div>
+                    <a href="https://map.naver.com/?dlevel=13&pinTitle=서울특별시 마포구 백범로31길 21 서울복지타운&lat=37.5466768&lng=126.9497275" class="NaverMap_NaverMap">
+                      <img src="https://naveropenapi.apigw.ntruss.com/map-static/v…lor:red&scale=2&X-NCP-APIGW-API-KEY-ID=z7e7ujba1u" alt="Map with company address">
                     </a>
                   </div>
-                </li>
-                <!-- -----------기업------------ -->
-              </ul>
+                </section>
+              </div>
             </div>
+            <aside class="JobProcess_container" style="top: 70px;">
+              <div class="BeforeApplication_container">
+                <header>
+                  <button type="button" class="BookmarkBtn_bookmarkBtn BeforeApplication_pcBookmarkBtn">
+                    <svg width="13" height="17" viewBox="0 0 13 17" style="color: rgb(51, 102, 255);">
+                      <defs>
+                        <path id="bookmarkIconLine" d="M1.481 1.481h9.382v10.727c0 .409.331.74.74.74.41 0 .741-.331.741-.74V.74c0-.41-.331-.741-.74-.741H.74C.33 0 0 .332 0 .74v14.814c0 .568.614.925 1.108.643l5.18-2.873 5.104 2.873c.355.203.807.08 1.01-.276.203-.355.08-.808-.275-1.01l-5.471-3.083c-.228-.13-.507-.13-.735 0l-4.44 2.45V1.48z"></path>
+                      </defs>
+                      <g fill="none" fill-rule="evenodd">
+                        <use fill="currentColor" xlink:href="#bookmarkIconLine"></use>
+                      </g>
+                    </svg>
+                    북마크하기
+                  </button>
+                  <div class="ApplyBtn_container">
+                    <div class="ApplyBtn_container_item">
+                      <button type="button" class="ApplyBtn_button">
+                        지원하기
+                      </button>
+                    </div>
+                  </div>
+                </header>
+              </div>
+            </aside>
           </div>
         </div>
+
+
+
+
       </div>
-      <!-- -------------------- 기업 목록 끝 ------------------ -->
+      <!-- -------------------- 기업 상세보기 끝 ------------------ -->
+
       <!---------------------- footer 시작 ---------------------->
       <footer class="Footer_footerClass">
         <div class="Footer_rowClass">
