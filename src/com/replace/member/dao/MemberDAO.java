@@ -13,12 +13,12 @@ public class MemberDAO {
 	public MemberDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-	/*	
+	
 //	회원가입
-	public void insert(MemberVO memberVO) {
+	public void join(MemberVO memberVO) {
 		sqlSession.insert("member.insert", memberVO);
 	}
-		
+/*		
 //	아이디 중복검사
 	public String selectIdentification(String memberIdentification) {
 		return sqlSession.selectOne("member.selectIdentification", memberIdentification);
