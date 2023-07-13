@@ -2,19 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 쿼리문 작성페이지 -->
-<mapper namespace="member">
+<mapper namespace="bookmark">
 
- 	<insert id="join">
+<!-- 	<insert id="insert">
 		insert into tbl_member
-		(member_name, member_id, member_password, member_email, member_phone_number)
-		values( #{memberName},#{memberId}, #{memberPassword}, #{memberEmail} , #{memberPhoneNumber} )
+		(member_identification, member_password, member_name, member_birth, member_phone, member_email)
+		values(#{memberIdentification}, #{memberPassword}, #{memberName}, #{memberBirth}, #{memberPhone}, #{memberEmail})
 	</insert>
 	
-	<!--
 	<select id="selectIdentification" resultType="string">
 		select member_identification from tbl_member where member_identification = #{memberIdentification}
-	</select> 
-	-->
+	</select> -->
 	
 </mapper>
 
