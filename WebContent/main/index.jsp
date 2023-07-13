@@ -16,6 +16,20 @@
 <script type="text/javascript" src="../jquery/jquery-3.7.0.js">
 	
 </script>
+<script type="text/javascript">
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
+$(".MainBar_hamberger").mouseenter(function(){
+  $(".OverlayJobCategory_Container").css("display","block");
+});
+$(".Explore_Container").mouseleave(function(){
+  $(".OverlayJobCategory_Container").css("display","none");
+  $(".Explore_SubCategory").css("display","none");
+
+});
+$("#programming").mouseover(function(){
+  $(".Explore_SubCategory").css("display","block");
+});
+</script>
 <body>
 	<div
       class="NavBar_className"
@@ -919,7 +933,7 @@
                       <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
                           기업목록
                       </span>
-                      <a href="" class="Typography_typography Typography_typography_B1 Typography_typography_medium More-View">
+                      <a href="../company-list/companyList.jsp" class="Typography_typography Typography_typography_B1 Typography_typography_medium More-View">
                         +더보기
                       </a>
                   </div>

@@ -1,5 +1,6 @@
 package com.replace;
 
+
 public class Result {
 	private String path;
 	private boolean isRedirect;
