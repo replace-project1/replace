@@ -385,6 +385,7 @@
                     $(this).css("border-color", "red");
                     $(".errorMsg").css("opacity", 1);
                     $(".telinput1").css("border-color", "red");
+                    $(".telinputButton").css("background-color", "white");
                 } else {
                     $(this).css("border-color", "#e1e2e3");
                     $(".errorMsg").css("opacity", 0);
