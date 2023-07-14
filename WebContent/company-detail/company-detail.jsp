@@ -899,4 +899,20 @@
 
     </main>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+
+$(".MainBar_hamberger").mouseenter(function(){
+  $(".OverlayJobCategory_Container").css("display","block");
+ 
+});
+$(".Explore_Container").mouseleave(function(){
+  $(".OverlayJobCategory_Container").css("display","none");
+  $(".Explore_SubCategory").css("display","none");
+
+});
+$("#programming").mouseover(function(){
+  $(".Explore_SubCategory").css("display","block");
+});
+</script>
 </html>
