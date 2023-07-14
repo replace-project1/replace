@@ -13,23 +13,7 @@
 </head>
 
 
-<script type="text/javascript" src="../jquery/jquery-3.7.0.js">
-	
-</script>
-<script type="text/javascript">
-HTMLCollection.prototype.forEach = Array.prototype.forEach;
-$(".MainBar_hamberger").mouseenter(function(){
-  $(".OverlayJobCategory_Container").css("display","block");
-});
-$(".Explore_Container").mouseleave(function(){
-  $(".OverlayJobCategory_Container").css("display","none");
-  $(".Explore_SubCategory").css("display","none");
 
-});
-$("#programming").mouseover(function(){
-  $(".Explore_SubCategory").css("display","block");
-});
-</script>
 <body>
 	<div
       class="NavBar_className"
@@ -126,7 +110,7 @@ $("#programming").mouseover(function(){
             <div class="Aside_visibleMenu"></div>
           </aside>
         </nav>
-        <div class="OverlayJobCategory_Container" >
+        <div class="OverlayJobCategory_Container" id = "OverlayJobCategory_Container">
           <div>
             <div class="Explore_Container" >
               <section class="Explore_MainCategory">
@@ -682,13 +666,25 @@ $("#programming").mouseover(function(){
             <div class="slick-list" style="padding: 0px 50px">
               <div
                 class="slick-track"
-                style="width: 60957px; opacity: 1; transform: translate3d(293px, 0px, 0px)">
-                <div
-                  data-index="-2"
-                  
-                  class="slick-slide slick-cloned"
-                  
-                  style="width: 970px">
+                id = "slide-track"
+                style="width: 60957px; opacity: 1; transform: translate3d(-701px, 0px, 0px)">
+                <!-- 5번 슬라이드 -->
+                <div class="slick-slide" style="outline: none; width: 970px">
+                  <div>
+                    <div style="width: 100%; display: inline-block">
+                      <div class="Image_Image">
+                        <a href="/company/34893">
+                          <img
+                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2083%2F18426d55.jpg&amp;w=1060&amp;q=100"
+                            alt="기업용보안 솔루션 개발 '샌즈랩'"
+                            class="Image_Image_image"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 1번 슬라이드 -->
+                <div class="slick-slide" style="width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
@@ -702,6 +698,7 @@ $("#programming").mouseover(function(){
                     </div>
                   </div>
                 </div>
+                <!-- 2번 슬라이드 -->
                 <div  class="slick-slide"  style="width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
@@ -716,9 +713,8 @@ $("#programming").mouseover(function(){
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
+                <!-- 3번 슬라이드 -->
+                <div class="slick-slide"style="outline: none; width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
@@ -732,9 +728,8 @@ $("#programming").mouseover(function(){
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
+                <!-- 4번 슬라이드 -->
+                <div class="slick-slide"style="outline: none; width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
@@ -748,9 +743,8 @@ $("#programming").mouseover(function(){
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
+                <!-- 5번 슬라이드 -->
+                <div class="slick-slide" style="outline: none; width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
@@ -764,139 +758,37 @@ $("#programming").mouseover(function(){
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
+                <!-- 1번 슬라이드 -->
+                <div class="slick-slide" style="width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
-                        <a href="/company/7810">
+                        <a href="/themes/major">
                           <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2060%2F7733c9dc.jpg&amp;w=1060&amp;q=100"
-                            alt="서비스 기획, UX/UI 디자인 채용 중"
+                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2070%2F1c7540fe.jpg&amp;w=1060&amp;q=100"
+                            alt="주요 대기업 포지션 모음"
                             class="Image_Image_image"/>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
+                <!-- 2번 슬라이드 -->
+                <div  class="slick-slide"  style="width: 970px">
                   <div>
                     <div style="width: 100%; display: inline-block">
                       <div class="Image_Image">
-                        <a href="/company/8">
+                        <a href="/company/7234">
                           <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2065%2Fd2a259a9.jpg&amp;w=1060&amp;q=100"
-                            alt="채널톡은 글로벌 성장 중"
+                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2079%2Fa985481f.jpg&amp;w=1060&amp;q=100"
+                            alt="블록체인 개발 전직군 채용 중"
                             class="Image_Image_image"/>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a
-                          href="https://insight.wanted.co.kr/"
-                          target="_blank"
-                          >
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2081%2F94a5e1b2.jpg&amp;w=1060&amp;q=100"
-                            alt="연봉, 면접 등 기업정보를 한번에"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/events/office_introduction">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2077%2Fcb3790a0.jpg&amp;w=1060&amp;q=100"
-                            alt="우리 회사 오피스 자랑대회"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/themes/newposition">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2078%2Fa78a154c.jpg&amp;w=1060&amp;q=100"
-                            alt="이번 주 신규 포지션"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/themes/babyunicorn">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2059%2F24c52879.jpg&amp;w=1060&amp;q=100"
-                            alt="2023 아기 유니콘 기업"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="slick-slide"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/events/secondoffice">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2067%2Fe480aaf1.jpg&amp;w=1060&amp;q=100"
-                            alt="해외 개발자 원격 채용"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="slick-slide"
-                  
-                  aria-hidden="false"
-                  style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/34277">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2022%2F01a84ec1.jpg&amp;w=1060&amp;q=100"
-                            alt="삶을 반짝이게 만드는 벅찬 순간"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <button
@@ -939,17 +831,18 @@ $("#programming").mouseover(function(){
                   </div>
               </div>
               <div class="RecruitMainCardList_container RecruitMainCardList_fourRow RecruitMainCardList_platinumvip RecruitMainCardList_isBoxShadow">
+                  <!-- 메인 페이지 기업목록 시작 -->
                   <div>
                       <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
+                          <a href="../company-detail/company-detail.jsp">
                               <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
+                          
+                          	<div class="RecruitMainCardList_card-content">
+                            	<div class="RecruitMainCardList_company-img-logo-wrap">
+                                	<span class="Image_custom-image Image_custom-image_intrinsic">
+                                    	<img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
+                                	</span>
+                              	</div>
                               <div class="RecruitMainCardList_company-name-wrap">
                                   <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
                                       제목
@@ -981,324 +874,11 @@ $("#programming").mouseover(function(){
                                       </span>
                                   </span>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
+                          	</div>
                           </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
                       </div>
                   </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="/jobs/detail/95922080?productCode=dfplatinumvip">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          </a>
-                          <div class="RecruitMainCardList_card-content">
-                              <div class="RecruitMainCardList_company-img-logo-wrap">
-                                  <span class="Image_custom-image Image_custom-image_intrinsic">
-                                      <img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                  <!-- 메인 페이지 기업목록 시작 -->
               </div>
           </div>
         </div>
@@ -1441,5 +1021,41 @@ $("#programming").mouseover(function(){
       </footer>
     </main>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+
+$(".MainBar_hamberger").mouseenter(function(){
+  $(".OverlayJobCategory_Container").css("display","block");
+ 
+});
+$(".Explore_Container").mouseleave(function(){
+  $(".OverlayJobCategory_Container").css("display","none");
+  $(".Explore_SubCategory").css("display","none");
+
+});
+$("#programming").mouseover(function(){
+  $(".Explore_SubCategory").css("display","block");
+});
+</script>
+<script type="text/javascript">
+let count = 1;
+const wrap = $("#slide-track");
+
+let slide = setInterval(autoSlide, 1000);
+
+function autoSlide() {
+  wrap.css("transition", "transform 0.5s");
+  wrap.css({'transform':'translate('+ (-(994 * ++count - 293)) + 'px)'});
+
+  if (count == 6) {
+    setTimeout(() => {
+      wrap.css("transition", "transform 0s");
+      wrap.css({'transform' : 'translate(' + (-(994 - 293)) + 'px)'});
+
+    }, 500);
+    count = 0;
+  }
+}
+</script>
 
 </html>

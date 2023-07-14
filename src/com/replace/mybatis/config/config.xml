@@ -24,7 +24,13 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/app/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/companyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/positionMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/bookmarkMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/applyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/invitationMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/fileMapper.xml"/>
 	</mappers>
 </configuration>
 
