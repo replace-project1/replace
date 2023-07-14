@@ -15,7 +15,7 @@
 			<transactionManager type="JDBC"/>
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-														<!-- 프로젝트 이름 : replace -->
+														<!-- 프로젝트 이름 : project_replace -->
 				<property name="url" value="jdbc:mysql://localhost:3306/project_replace"/>
 				<property name="username" value="root"/>
 				<property name="password" value="1234"/>
@@ -24,7 +24,7 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/app/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/memberMapper.xml"/>
 	</mappers>
 </configuration>
 
