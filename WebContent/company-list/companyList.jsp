@@ -901,7 +901,7 @@
                 <!-- -----------기업------------ -->
                 <li>
                   <div class="Card_className">
-                    <a href="https://www.wanted.co.kr/wd/168540">
+                    <a href="../company-detail/company-detail.jsp">
                       <header style="background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15723%2Frugrc2qp0c4uc3yi_400_400.jpg&w=400&q=75);">
                         <button type="button" class="bookmarkBtn">
                           <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path>
@@ -1062,4 +1062,38 @@
 
     </main>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+
+$(".MainBar_hamberger").mouseenter(function(){
+  $(".OverlayJobCategory_Container").css("display","block");
+ 
+});
+$(".Explore_Container").mouseleave(function(){
+  $(".OverlayJobCategory_Container").css("display","none");
+  $(".Explore_SubCategory").css("display","none");
+
+});
+$("#programming").mouseover(function(){
+  $(".Explore_SubCategory").css("display","block");
+});
+</script>
+<script type="text/javascript">
+	$(".JobGroup_JobGroup").click(function(){
+    if ($(".JobGroupOverlay_JobGroupOverlay").css("display") == "none") {
+      $(".JobGroupOverlay_JobGroupOverlay").css("display", "block");
+      console.log($(".JobGroupOverlay_JobGroupOverlay").css("display"));
+    }else{
+      $(".JobGroupOverlay_JobGroupOverlay").css("display", "none");
+      console.log($(".JobGroupOverlay_JobGroupOverlay").css("display"));
+    }
+  });
+  $(".JobCategory_JobCategory__btn").click(function(){
+    if ($(".JobCategoryOverlay_JobCategoryOverlay").css("display")=="none") {
+      $(".JobCategoryOverlay_JobCategoryOverlay").css("display", "table");
+    }else{
+      $(".JobCategoryOverlay_JobCategoryOverlay").css("display", "none");
+    }
+  });
+</script>
 </html>
