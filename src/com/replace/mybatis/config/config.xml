@@ -25,6 +25,15 @@
 	
 	<mappers>
 		<mapper resource="com/replace/mybatis/mapper/memberMapper.xml"/>
+<<<<<<< HEAD
+=======
+		<mapper resource="com/replace/mybatis/mapper/companyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/positionMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/bookmarkMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/applyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/invitationMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/fileMapper.xml"/>
+>>>>>>> d4665507a9f279bd6371e74c71463ff7ae1d97f6
 	</mappers>
 </configuration>
 
