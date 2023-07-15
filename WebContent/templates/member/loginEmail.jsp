@@ -71,7 +71,7 @@
             if (!emailRegex.test(email)) {
                 $(this).css("border-color", "red");
                 $(".errorMsg").css("opacity", 1);
-                $(".emailnext").css("background-color", "");
+                $(".emailnext").css("background-color", "white");
             } else {
                 $(this).css("border-color", "blue");
                 $(".errorMsg").css("opacity", 0);

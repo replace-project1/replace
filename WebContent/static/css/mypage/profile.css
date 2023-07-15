@@ -106,6 +106,8 @@ a, a:active, a:hover, a:visited {
 
 .MainBar_MainBar_logo {
     display: block;
+    top: 1px;
+    position: relative;
 }
 
 a {
@@ -1145,4 +1147,10 @@ ol, ul {
 
 .Notice_Notice_icon.Notice_green__xs svg path {
     fill: #07ba9c;
+}
+
+
+.logo {
+	font-size:18px;
+	font-weight: 800;
 }

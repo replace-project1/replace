@@ -460,7 +460,7 @@
 
                 var confirm = $('.confirm');
                 if (isAnyEmpty) {
-                    confirm.css('background-color', '');
+                    confirm.css('background-color', 'white');
                 } else {
                     confirm.css('background-color', 'blue');
                 }
