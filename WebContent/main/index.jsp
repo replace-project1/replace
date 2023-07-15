@@ -15,7 +15,16 @@
 
 
 <body>
-<jsp:include page="../templates/header/loginHeader.jsp"/>
+
+ <c:choose>
+   <c:when test=""${not empty sessionScope.memberEmail}"">
+     <jsp:include page="../templates/header/loginHeader.jsp"/>
+   </c:when>
+   <c:otherwise>
+     <jsp:include page="../templates/header/logoutHeader.jsp"/>
+   </c:otherwise>
+ </c:choose>
+
     <div class="Padding_padding Padding_padding_isLoggedOut"></div>
     <main>
       <section class="Section_Section">
@@ -391,7 +400,6 @@
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
 <script type="text/javascript">
 let count = 1;
 const wrap = $("#slide-track");
