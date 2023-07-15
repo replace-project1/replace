@@ -30,7 +30,7 @@
                     <form class="formbox">
                         <div>
                             <div>
-                                <p class="corpPage">원티드 기업 서비스 페이지입니다.</p>
+                                <p class="corpPage">리플레이스 기업 서비스 페이지입니다.</p>
                             </div>
 
                             <div>
@@ -46,7 +46,7 @@
 
                         <!-- 계정선택 -->
                         <section class="profileBox">
-                            <img src="./profile_default.png" alt="" class="profileIMG">
+                            <img src="../../static/images/profile_default.png" alt="" class="profileIMG">
                             <!-- 회원 이메일 -->
                             <span class="loginEmail">kangminjun99@gmail.com</span>
                         </section>

@@ -37,15 +37,8 @@
 						<li class><a
 							href="https://www.wanted.co.kr/wdlist/518?country=kr&job_sort=company.response_rate_order&years=-1&locations=all">채용</a>
 						</li>
-						<li class><a href="https://www.wanted.co.kr/events">이벤트</a></li>
 						<li class="smMoreVisible"><a
 							href="https://www.wanted.co.kr/cv/list">이력서</a></li>
-						<li class="smMoreVisible"><a
-							href="https://www.wanted.co.kr/community">커뮤니티</a></li>
-						<li class="smMoreVisible"><a
-							href="https://www.wanted.co.kr/gigs/experts">프리랜서</a></li>
-						<li class="smMoreVisible"><a
-							href="https://www.wanted.co.kr/aiscore/resume">AI 합격예측</a></li>
 					</ul>
 					<aside class="Aside_className isLoggedIn">
 						<ul>
