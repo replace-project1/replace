@@ -472,76 +472,146 @@ img {
     padding-top: 13px;
 }
 
-.List_List_table {
-    margin-bottom: 80px;
+/* .List_wrapper .Offers-header {
+    margin-top: -1px;
+    line-height: normal;
+    color: #999;
 }
 
-.List_List_table_tr {
-    background-color: #f8f8fa;
-    border-bottom: 1px solid rgba(209,209,209,.4);
+.List_wrapper .Offers-header ul {
+    margin-bottom: 8px;
 }
 
-.List_List_table_tr:active, .List_List_table_tr:hover {
-    background-color: #fafafa;
-}
-
-.List_List_table_tr {
+.List_row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    padding: 0 10px;
-    background: #fff;
-    border-bottom: 1px solid rgba(209,209,209,.4);
 }
 
-.List_List_table_td_company_name.table-header {
-    text-align: center;
+.List_wrapper .Offers-header .col-1 {
+    padding-left: 20px;
+}
+
+.List_row .col-1 {
+    width: 57.0886075949%;
+}
+
+.List_row .col-2 {
+    width: 22.7848101266%;
+}
+
+.List_wrapper .Offers-header .col-3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.List_row .col-3 {
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -ms-flex-preferred-size: calc(21% + 34px);
-    flex-basis: calc(21% + 34px);
+    padding-right: 20px;
 }
 
-.List_List_table_td.table-header {
-    text-align: center;
-    color: #171717;
-    font-size: 14px;
-    font-weight: 400;
+.List_wrapper .Offers-header .statusInfoButton {
+    display: none;
+    margin-left: 5px;
+} */
+
+.invitation_section {
+    margin-top: 30px;
 }
 
-.List_List_table_td_position {
-    -ms-flex: 1 0 20%;
-    flex: 1 0 20%;
+.invitation_div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 22px;
+    width: auto;
+    height: auto;
+    list-style: none;
+    padding: 30px;
+    background-color: rgba(77, 125, 255, 0.05);
+    border-radius: 10px;
+    position: relative;
 }
 
-.List_List_table_td {
-    font-size: 14px;
-    font-weight: 400;
+.invited_seats {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+    width: auto;
+    height: auto;
+    list-style: none;
+}
+
+.invited_seats_title {
+    font-size: 20px;
+    font-weight: 700;
     color: #333;
-    min-height: 44px;
-    line-height: 44px;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    word-break: break-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    padding: 10px 0 20px;
 }
 
-.List_List_table_td_due_date {
-    -ms-flex: 1 0 13%;
-    flex: 1 0 13%;
+.invitation_cards {
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    list-style: none;
+    z-index: 1;
+}
+
+.invitation_card {
+    flex: 1 1 0%;
+    place-self: auto;
+    width: auto;
+    height: auto;
+}
+
+.company_wrapper {
+    text-align: center;
+    min-width: 300px;
+    padding: 20px;
+    min-height: 161px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.company_wrapper>img {
+    width: 150px;
+    height: 150px;
+}
+
+.company_position {
+    color: var(--theme-palette-label-normal);
+    font-size: 20px;
+    font-weight: 700;
+    word-break: keep-all;
+    font-style: normal;
+    width: auto;
+    height: auto;
+    margin-right: 4px;
+}
+
+.company_name {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 .Container_Profile:after {

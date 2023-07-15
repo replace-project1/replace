@@ -140,8 +140,6 @@ button {
     height: inherit;
     text-align: center;
     margin: 0;
-    position: relative;
-    left: -125px;
 }
 
 ol, ul {
