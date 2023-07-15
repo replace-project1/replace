@@ -1,29 +1,30 @@
 @charset "UTF-8";
 
 
+
 .LineBanner_LineBanner {
     width: 1060px;
-    margin: 60px auto
+    margin: 60px auto;
 }
 
 @media(min-width: 1200px) {
     .LineBanner_LineBanner {
         max-width:1060px;
-        width: 87.72%
+        width: 87.72%;
     }
 }
 
 @media(min-width: 768px)and (max-width:991px) {
     .LineBanner_LineBanner {
         max-width:1060px;
-        width: 90%
+        width: 90%;
     }
 }
 
 @media(min-width: 992px)and (max-width:1199px) {
     .LineBanner_LineBanner {
         max-width:1060px;
-        width: 90%
+        width: 90%;
     }
 }
 @media(max-width: 767px) {
@@ -31,22 +32,22 @@
         width:100%;
         margin-top: 18px;
         margin-bottom: 40px;
-        padding: 0 20px
+        padding: 0 20px;
     }
 }
 
-.LineBanner_LineBanner__link {
+.LineBanner_LineBanner_link {
     display: -ms-flexbox;
     display: flex;
     word-break: keep-all;
-    text-align: center
+    text-align: center;
 }
 
-.LineBanner_LineBanner__link:lang(ja) {
-    word-break: normal
+.LineBanner_LineBanner_link:lang(ja) {
+    word-break: normal;
 }
 
-.LineBanner_LineBanner__box {
+.LineBanner_LineBanner_box {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-positive: 1;
@@ -59,15 +60,15 @@
     color: #fff;
     font-size: 14px;
     font-weight: 700;
-    border-radius: 38.5px
+    border-radius: 38.5px;
 }
 
-.LineBanner_LineBanner__box>svg {
-    margin-right: 15px
+.LineBanner_LineBanner_box>svg {
+    margin-right: 15px;
 }
 
 @media(max-width: 767px) {
-    .LineBanner_LineBanner__box>svg {
+    .LineBanner_LineBanner_box>svg {
         stroke:#fff;
         margin-right: 9px;
         height: 16px;
@@ -76,17 +77,23 @@
 }
 
 @media(min-width: 1200px) {
-    .LineBanner_LineBanner__box {
+    .LineBanner_LineBanner_box {
         padding:21px 30px;
         font-size: 18px;
-        line-height: normal
+        line-height: normal;
     }
 }
 
-.LineBanner_LineBanner__gradient {
+.LineBanner_LineBanner_gradient {
     background-image: -webkit-gradient(linear,left top,right top,color-stop(-12%,#01a9fe),color-stop(37%,#2f5fef),color-stop(72%,#046afe),color-stop(110%,#00d2dd));
-    background-image: linear-gradient(90deg,#01a9fe -12%,#2f5fef 37%,#046afe 72%,#00d2dd 110%)
+    background-image: linear-gradient(90deg,#01a9fe -12%,#2f5fef 37%,#046afe 72%,#00d2dd 110%);
 }
+
+
+
+
+
+
 
 
 

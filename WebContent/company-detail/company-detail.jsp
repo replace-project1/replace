@@ -1,33 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>main</title>
-<link rel="stylesheet" href="../static/css/main/main.css" />
-<link rel="stylesheet" href="../static/css/main/menu.css" />
-<link rel="stylesheet" href="../static/css/main/slick.css" />
-<link rel="stylesheet" href="../static/css/main/cardList.css" />
-<link rel="stylesheet" href="../static/css/main/lineBanner.css" />
+<title>포지션 상세보기</title>
+	<link rel="stylesheet" href="../static/css/main/main.css" />
+    <link rel="stylesheet" href="../static/css/main/menu.css" />
+    <link rel="stylesheet" href="../static/css/company-detail/company-detail.css" />
 </head>
-
-
-
 <body>
-	<div
+ <!-- ----------------- 상단 배너 시작 ----------------- -->
+    <div
       class="NavBar_className"
       style="position: fixed; padding-right: initial">
-      <div class="MainBar_MainBar" >
+      <div class="MainBar_MainBar">
         <nav class="MainBar_MainBar_nav">
           <div class="MainBar_MainBar_nav_top">
             <div class="MainBar_MainBar_nav_top_logo">
               <button type="button" class="MainBar_hamberger">
                 <img
                   src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=17&amp;q=75"
-                  alt="hamberger menu"
                   height="14"
-                  style="width: 17px; height: 14px; object-fit: contain"/>
+                  style="width: 17px; height: 14px; object-fit: contain"
+                />
               </button>
               <a
                 href="https://www.wanted.co.kr/jobsfeed"
@@ -35,8 +31,7 @@
                 <svg width="74" height="21" viewBox="0 0 140 32">
                   <path
                     fill="currentColor"
-                    d="M89.8 2.2l-5.6 2.4v4.8h-3.8v5.2h3.8v10.2c0 4.2 2.6 7 6.6 7 1.6 0 2.6-.4 3.2-.6V26c-.2 0-1 .2-1.8.2-1.6 0-2.4-.6-2.4-2.6v-8.8H94V9.6h-4.2V2.2zM28.6 9.6l-4 14-4.6-14h-5.6l-4.6 14L6 9.6H0l6.8 21.8h6l4.4-14.6 4.6 14.6h6l6.8-21.8zM134.4 2.2v8.6c-1.4-1-3-1.6-4.8-1.8h-.4-1.6c-5 .4-8.2 4.2-9.2 9-.2.8-.2 1.4-.2 2.2V22c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.4V0l-5.4 2.2zm-5.2 24.4c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM116.2 18c-.8-5.2-4.6-9-10-9s-9.2 3.8-10 9c-.2.8-.2 1.6-.2 2.6v1.6c.6 5.6 4.4 10 10.2 10 4.6 0 8-2.8 9.4-6.8l-5-1.2c-.8 1.8-2.4 3.2-4.4 3.2-2.8 0-4.6-2.2-5-5.2h15.2v-1.6c0-1 0-1.8-.2-2.6zm-14.8 0c.8-2.2 2.4-3.6 4.8-3.6s4 1.6 4.8 3.6h-9.6zM50.6 11c-1.4-1-3.2-1.8-5.2-1.8H44.8h-.6c-5.2.4-8.6 4-9.4 9-.2.8-.2 1.4-.2 2.2v1.8c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.6V9.6h-5.6V11zm-5.2 15.6c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM71.2 9c-2.2 0-4.6 1-6 3.2V9.6h-5.6v21.8h5.6V18.8c0-2.6 1.4-4.6 4-4.6 2.8 0 3.8 2 3.8 4.4v12.8h5.6V17.6c.2-4.8-2.2-8.6-7.4-8.6z">
-                  </path>
+                    d="M89.8 2.2l-5.6 2.4v4.8h-3.8v5.2h3.8v10.2c0 4.2 2.6 7 6.6 7 1.6 0 2.6-.4 3.2-.6V26c-.2 0-1 .2-1.8.2-1.6 0-2.4-.6-2.4-2.6v-8.8H94V9.6h-4.2V2.2zM28.6 9.6l-4 14-4.6-14h-5.6l-4.6 14L6 9.6H0l6.8 21.8h6l4.4-14.6 4.6 14.6h6l6.8-21.8zM134.4 2.2v8.6c-1.4-1-3-1.6-4.8-1.8h-.4-1.6c-5 .4-8.2 4.2-9.2 9-.2.8-.2 1.4-.2 2.2V22c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.4V0l-5.4 2.2zm-5.2 24.4c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM116.2 18c-.8-5.2-4.6-9-10-9s-9.2 3.8-10 9c-.2.8-.2 1.6-.2 2.6v1.6c.6 5.6 4.4 10 10.2 10 4.6 0 8-2.8 9.4-6.8l-5-1.2c-.8 1.8-2.4 3.2-4.4 3.2-2.8 0-4.6-2.2-5-5.2h15.2v-1.6c0-1 0-1.8-.2-2.6zm-14.8 0c.8-2.2 2.4-3.6 4.8-3.6s4 1.6 4.8 3.6h-9.6zM50.6 11c-1.4-1-3.2-1.8-5.2-1.8H44.8h-.6c-5.2.4-8.6 4-9.4 9-.2.8-.2 1.4-.2 2.2v1.8c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.6V9.6h-5.6V11zm-5.2 15.6c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM71.2 9c-2.2 0-4.6 1-6 3.2V9.6h-5.6v21.8h5.6V18.8c0-2.6 1.4-4.6 4-4.6 2.8 0 3.8 2 3.8 4.4v12.8h5.6V17.6c.2-4.8-2.2-8.6-7.4-8.6z"></path>
                 </svg>
               </a>
             </div>
@@ -75,8 +70,7 @@
                     <defs>
                       <path
                         id="searchButtonPath"
-                        d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
-                      </path>
+                        d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path>
                     </defs>
                     <g fill="none" fill-rule="evenodd">
                       <use
@@ -84,25 +78,24 @@
                         fill-rule="nonzero"
                         stroke="#333"
                         stroke-width=".3"
-                        xlink:href="searchButtonPath">
-                      </use>
+                        xlink:href="searchButtonPath"></use>
                     </g>
                   </svg>
                 </button>
               </li>
               <li>
-                <button class="signUpButton" type="button">회원가입/로그인</button>
+                <button class="signUpButton" type="button">로그아웃</button>
               </li>
+
               <li class="mdMoreVisible leftDivision">
-                <a class="dashboardButton" href="https://www.wanted.co.kr/dashboard">기업 서비스</a>
+                <a class="dashboardButton" href="https://www.wanted.co.kr/profile/matching">마이페이지</a>
               </li>
               <li class="Aside_visibleMenu">
                 <button class="menuButton" type="button">
                   <svg width="18" height="18" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
-                      d="M12 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 12 10zm7 0a2 2 0 1 1-.001 4.001A2 2 0 0 1 19 10zM5 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 5 10z">
-                    </path>
+                      d="M12 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 12 10zm7 0a2 2 0 1 1-.001 4.001A2 2 0 0 1 19 10zM5 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 5 10z"></path>
                   </svg>
                 </button>
               </li>
@@ -110,7 +103,7 @@
             <div class="Aside_visibleMenu"></div>
           </aside>
         </nav>
-        <div class="OverlayJobCategory_Container" id = "OverlayJobCategory_Container">
+        <div class="OverlayJobCategory_Container" >
           <div>
             <div class="Explore_Container" >
               <section class="Explore_MainCategory">
@@ -651,238 +644,134 @@
           </div>
         </div>
       </div>
+      
     </div>
     <div class="Padding_padding Padding_padding_isLoggedOut"></div>
+    <!-- ----------------- 상단 배너 끝 ----------------- -->
+
     <main>
-      <section class="Section_Section">
-        <div class="TopBanner_TopBanner">
-          <div class="slick-slider slick-initialized" dir="ltr">
-            <button
-              type="button"
-              class="slick-arrow slick-prev"
-              style="display: block">
-              Previous
-            </button>
-            <div class="slick-list" style="padding: 0px 50px">
-              <div
-                class="slick-track"
-                id = "slide-track"
-                style="width: 60957px; opacity: 1; transform: translate3d(-701px, 0px, 0px)">
-                <!-- 5번 슬라이드 -->
-                <div class="slick-slide" style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/34893">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2083%2F18426d55.jpg&amp;w=1060&amp;q=100"
-                            alt="기업용보안 솔루션 개발 '샌즈랩'"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
+      <!-- ----------------- 기업 상세보기 시작--------------- -->
+      <div class="JobDetail">
+        <div class="JobDetail_contentWrapper">
+          <div class="JobDetail_relativeWrapper">
+            <div class="JobContent_className">
+              <section class="JobImage_JobImage">
+                <button type="button" class="JobImage_JobImage_arrow JobImage_JobImage_arrow_left">
+                  <svg width="24" height="24" viewBox="0 0 12 12">
+                    <path fill="#b5b5b5" d="M3.345 9.72a.75.75 0 0 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06l-4.25-4.25a.75.75 0 0 0-1.06 1.06L7.065 6l-3.72 3.72z"></path>
+                  </svg>
+                </button>
+                <button type="button" class="JobImage_JobImage_arrow JobImage_JobImage_arrow_right">
+                  <svg width="24" height="24" viewBox="0 0 12 12">
+                    <path fill="#b5b5b5" d="M3.345 9.72a.75.75 0 0 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06l-4.25-4.25a.75.75 0 0 0-1.06 1.06L7.065 6l-3.72 3.72z"></path>
+                  </svg>
+                </button>
+                <div class="JobImage_JobImage_slides_">
+                  <div class="JobImage_JobImage_slide">
+                    <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F5048%2Fxnuygnxtskdletve_1080_790.jpg&amp;w=1000&amp;q=75" alt="기업 소개 이미지">
                   </div>
                 </div>
-                <!-- 1번 슬라이드 -->
-                <div class="slick-slide" style="width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/themes/major">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2070%2F1c7540fe.jpg&amp;w=1060&amp;q=100"
-                            alt="주요 대기업 포지션 모음"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+              </section>
+              <section class="JobHeader_className">
+                <h2>백엔드 개발자</h2>
+                <div>
+                  <h6 style="max-width: calc(100% - 88px);">
+                    <a href="/company/5048" class="">기업이름</a>
+                  </h6>
+                  <span class="JobHeader_pcLocationContainer">
+                    서울
+                    <span class="JobHeader_dot">.</span>
+                    한국
+                  </span>
                 </div>
-                <!-- 2번 슬라이드 -->
-                <div  class="slick-slide"  style="width: 970px">
+              </section>
+              <div class="JobContent_descriptionWrapper">
+                <section class="JobDescription_JobDescription">
+                  <p>
+                    <span>
+                      소개정보
+                      <br>
+                      소개정보
+                      <br>
+                      소개정보
+                      <br>
+                      <br>
+                      1. 소개정보
+                      <br>
+                      2. 소개정보
+                      <br>
+                      3. 소개정보
+                      <br>
+                      4. 소개정보
+                    </span>
+                  </p>
+                  <h6>주요업무</h6>
+                  <p>
+                    <span>
+                      ㆍ주요업무 상세 정보
+                    </span>
+                  </p>
+                </section>
+                <hr class="JobContent_divider">
+                <section class="JobWorkPlace_className">
                   <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/7234">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2079%2Fa985481f.jpg&amp;w=1060&amp;q=100"
-                            alt="블록체인 개발 전직군 채용 중"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 3번 슬라이드 -->
-                <div class="slick-slide"style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/3118">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2084%2F107528a7.jpg&amp;w=1060&amp;q=100"
-                            alt="AI콘텐츠 제작 플랫폼 로보코리아"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 4번 슬라이드 -->
-                <div class="slick-slide"style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/1571">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2068%2F4be54056.jpg&amp;w=1060&amp;q=100"
-                            alt="디자인도 논리가 필요하니까"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 5번 슬라이드 -->
-                <div class="slick-slide" style="outline: none; width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/34893">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2083%2F18426d55.jpg&amp;w=1060&amp;q=100"
-                            alt="기업용보안 솔루션 개발 '샌즈랩'"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 1번 슬라이드 -->
-                <div class="slick-slide" style="width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/themes/major">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2070%2F1c7540fe.jpg&amp;w=1060&amp;q=100"
-                            alt="주요 대기업 포지션 모음"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 2번 슬라이드 -->
-                <div  class="slick-slide"  style="width: 970px">
-                  <div>
-                    <div style="width: 100%; display: inline-block">
-                      <div class="Image_Image">
-                        <a href="/company/7234">
-                          <img
-                            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2079%2Fa985481f.jpg&amp;w=1060&amp;q=100"
-                            alt="블록체인 개발 전직군 채용 중"
-                            class="Image_Image_image"/>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-            <button
-              type="button"
-              class="slick-arrow slick-next"
-              style="display: block">
-              Next
-            </button>
-          </div>
-        </div>
-        <aside class="LineBanner_LineBanner">
-          <a href="">
-            <div class="LineBanner_LineBanner_link">
-              <div class="LineBanner_LineBanner_box LineBanner_LineBanner_gradient">
-                <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 18 18">
-                  <defs>
-                    <path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
-                    </path>
-                  </defs>
-                  <g fill="none" fill-rule="evenodd">
-                    <use fill="#fff" fill-rule="nonzero" stroke="#fff" stroke-width=".3" xlink:href="#qt2dnsql4a">
-                    </use>
-                  </g>
-                </svg>
-                지원자 보러가기
-              </div>
-            </div>
-          </a>
-        </aside>
-        <div class="CompanyChart_wrapper">
-          <div class="CompanyChart_container">
-              <div class="MainTitle_title-wrap">
-                  <div class="MainTitle_title-text">
-                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                          기업목록
+                    <div>
+                      <span class="header">
+                        마감일
                       </span>
-                      <a href="../company-list/companyList.jsp" class="Typography_typography Typography_typography_B1 Typography_typography_medium More-View">
-                        +더보기
-                      </a>
+                      <span class="body">
+                        상시
+                      </span>
+                    </div>
+                    <div>
+                      <span class="header">
+                        근무지역
+                      </span>
+                      <span class="body">
+                        마포구 백범로31길 21, 서울창업허브 별관 301호
+                      </span>
+                    </div>
+                    <a href="https://map.naver.com/?dlevel=13&pinTitle=서울특별시 마포구 백범로31길 21 서울복지타운&lat=37.5466768&lng=126.9497275" class="NaverMap_NaverMap">
+                      <img src="https://naveropenapi.apigw.ntruss.com/map-static/v…lor:red&scale=2&X-NCP-APIGW-API-KEY-ID=z7e7ujba1u" alt="Map with company address">
+                    </a>
                   </div>
+                </section>
               </div>
-              <div class="RecruitMainCardList_container RecruitMainCardList_fourRow RecruitMainCardList_platinumvip RecruitMainCardList_isBoxShadow">
-                  <!-- 메인 페이지 기업목록 시작 -->
-                  <div>
-                      <div class="RecruitMainCardList_card-wrap">
-                          <a href="../company-detail/company-detail.jsp">
-                              <div class="RecruitMainCardList_card-border-wrap"></div>
-                          
-                          	<div class="RecruitMainCardList_card-content">
-                            	<div class="RecruitMainCardList_company-img-logo-wrap">
-                                	<span class="Image_custom-image Image_custom-image_intrinsic">
-                                    	<img src="https://img.albamon.kr/trans/150x60/2020-08-21/e31du74k1jai3zj.gif" class="" loading="lazy" alt="30초 간편지원/물류관리자 성장 기업 사이드로고">
-                                	</span>
-                              	</div>
-                              <div class="RecruitMainCardList_company-name-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      제목
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_recruit-title-wrap">
-                                  <span class="typography-paid typography-paid--headline-1">
-                                      <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
-                                          [특징]세부사항
-                                      </span>
-                                  </span>
-                              </div>
-                              <div class="RecruitMainCardList_card-footer-wrap">
-                                  <span class="Typography_typography Typography_typography_B3 Typography_typography_regular">
-                                      서울특별시(주소)
-                                      <span class="RecruitMainCardList_card-footer-dot">
-                                          ·
-                                      </span>
-                                      <span style="color: rgb(0, 161, 239);">
-                                          연 
-                                      </span> 
-                                      <span class="RecruitMainCardList_salary-wrap">
-                                          <strong class="Typography_typography Typography_typography_B3 Typography_typography_bold">
-                                              (가격)
-                                          </strong>
-                                          <span class="Typography_typography Typography_typography_B3 Typography_typography_medium">
-                                              원
-                                          </span>
-                                      </span>
-                                  </span>
-                              </div>
-                          	</div>
-                          </a>
-                      </div>
+            </div>
+            <aside class="JobProcess_container" style="top: 70px;">
+              <div class="BeforeApplication_container">
+                <header>
+                  <button type="button" class="BookmarkBtn_bookmarkBtn BeforeApplication_pcBookmarkBtn">
+                    <svg width="13" height="17" viewBox="0 0 13 17" style="color: rgb(51, 102, 255);">
+                      <defs>
+                        <path id="bookmarkIconLine" d="M1.481 1.481h9.382v10.727c0 .409.331.74.74.74.41 0 .741-.331.741-.74V.74c0-.41-.331-.741-.74-.741H.74C.33 0 0 .332 0 .74v14.814c0 .568.614.925 1.108.643l5.18-2.873 5.104 2.873c.355.203.807.08 1.01-.276.203-.355.08-.808-.275-1.01l-5.471-3.083c-.228-.13-.507-.13-.735 0l-4.44 2.45V1.48z"></path>
+                      </defs>
+                      <g fill="none" fill-rule="evenodd">
+                        <use fill="currentColor" xlink:href="#bookmarkIconLine"></use>
+                      </g>
+                    </svg>
+                    북마크하기
+                  </button>
+                  <div class="ApplyBtn_container">
+                    <div class="ApplyBtn_container_item">
+                      <button type="button" class="ApplyBtn_button">
+                        지원하기
+                      </button>
+                    </div>
                   </div>
-                  <!-- 메인 페이지 기업목록 시작 -->
+                </header>
               </div>
+            </aside>
           </div>
         </div>
-      </section>
+
+
+
+
+      </div>
+      <!-- -------------------- 기업 상세보기 끝 ------------------ -->
+
+      <!---------------------- footer 시작 ---------------------->
       <footer class="Footer_footerClass">
         <div class="Footer_rowClass">
           <div class="NavLinks_NavLinks">
@@ -926,32 +815,22 @@
                 href="https://www.wantedlab.com/"
                 class=""
                 target="_blank"
-                >Q&A
-              </a>
+                >Q&A</a>
               <a
                 href="https://help.wanted.co.kr/hc/ko/"
                 class=""
                 target="_blank"
-                >고객센터
-              </a>
-              <!-- <a
-                href="https://blog.wantedlab.com/"
-                class=""
-                target="_blank"
-                >원티드 블로그</a> -->
+                >고객센터</a>
               <a
                 href="https://www.wanted.co.kr/terms"
                 class=""
                 target="_blank"
-                >이용약관
-              </a>
+                >이용약관</a>
               <a
                 href="https://www.wanted.co.kr/privacy"
                 class=""
                 target="_blank"
-                >
-                <b>개인정보 처리방침</b>
-              </a>
+                ><b>개인정보 처리방침</b></a>
             </div>
           </div>
           <div class="SocialLinks_SocialLinks">
@@ -962,8 +841,7 @@
               >
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_instagram.png&amp;w=20&amp;q=100"
-                alt="instagram"/>
-              </a>
+            /></a>
             <a
               href="https://www.youtube.com/channel/UC0tGZ6MqieGG2m5lA5PeQsw"
               class=""
@@ -971,8 +849,7 @@
               >
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_youtube.png&amp;w=25&amp;q=100"
-                alt="youtube"/>
-              </a>
+            /></a>
             <a
               href="https://www.facebook.com/wantedkr"
               class=""
@@ -980,8 +857,8 @@
               >
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_facebook.png&amp;w=20&amp;q=100"
-                alt="facebook"/>
-              </a>
+                alt="facebook"
+            /></a>
             <a
               href="https://blog.naver.com/wantedlab"
               class=""
@@ -989,7 +866,8 @@
               >
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_blog.png&amp;w=20&amp;q=100"
-                alt="blog"/></a>
+                alt="blog"
+            /></a>
             <a
               href="https://apps.apple.com/kr/app/id1074569961"
               class=""
@@ -997,28 +875,28 @@
               >
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_apple.png&amp;w=17&amp;q=100"
-                alt="apple"/>
-              </a>
+            /></a>
             <a
               href="https://play.google.com/store/apps/details?id=com.wanted.android.wanted"
               class=""
               target="_blank"
-              >
-              <img
+              ><img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_google.png&amp;w=17&amp;q=100"
-                alt="google"/>
+              />
             </a>
           </div>
         </div>
         <div class="Footer_rowClass Footer_border">
           <p class="Footer_footerText kr">
-            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 |
-            통신판매번호 : 2020-서울송파-3147<br/>유료직업소개사업등록번호 : (국내)
-            제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118<br/>©
-            Wantedlab, Inc.
+            (주)리플레이스 (대표이사:2팀장님) | 서울특별시 강남구 테헤란로 146 현익빌딩 4층 |
+            전화번호 : 02-538-0021 <br />유료직업소개사업등록번호 : (국내)
+            제0000-0000000-00-0-00000호 | 사업자등록번호 : 000-00-00000 | 02-538-0021<br />©
+            REPLACE, Inc.
           </p>
         </div>
       </footer>
+      <!---------------------- footer 끝 ---------------------->
+
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -1037,25 +915,4 @@ $("#programming").mouseover(function(){
   $(".Explore_SubCategory").css("display","block");
 });
 </script>
-<script type="text/javascript">
-let count = 1;
-const wrap = $("#slide-track");
-
-let slide = setInterval(autoSlide, 1000);
-
-function autoSlide() {
-  wrap.css("transition", "transform 0.5s");
-  wrap.css({'transform':'translate('+ (-(994 * ++count - 293)) + 'px)'});
-
-  if (count == 6) {
-    setTimeout(() => {
-      wrap.css("transition", "transform 0s");
-      wrap.css({'transform' : 'translate(' + (-(994 - 293)) + 'px)'});
-
-    }, 500);
-    count = 0;
-  }
-}
-</script>
-
 </html>

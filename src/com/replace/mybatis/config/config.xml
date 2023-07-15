@@ -16,7 +16,7 @@
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
 														<!-- 프로젝트 이름 : replace -->
-				<property name="url" value="jdbc:mysql://localhost:3306/replace"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/project_replace"/>
 				<property name="username" value="root"/>
 				<property name="password" value="1234"/>
 			</dataSource>
@@ -24,7 +24,13 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/app/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/companyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/positionMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/bookmarkMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/applyMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/invitationMapper.xml"/>
+		<mapper resource="com/replace/mybatis/mapper/fileMapper.xml"/>
 	</mappers>
 </configuration>
 
