@@ -15,6 +15,7 @@
 
 
 <body>
+<<<<<<< HEAD
 	<div
       class="NavBar_className"
       style="position: fixed; padding-right: initial">
@@ -653,6 +654,18 @@
         </div>
       </div>
     </div>
+=======
+
+ <c:choose>
+   <c:when test=""${not empty sessionScope.memberEmail}"">
+     <jsp:include page="../templates/header/loginHeader.jsp"/>
+   </c:when>
+   <c:otherwise>
+     <jsp:include page="../templates/header/logoutHeader.jsp"/>
+   </c:otherwise>
+ </c:choose>
+
+>>>>>>> 6511aa97bc09cef63427f604c2beb4aa0370f432
     <div class="Padding_padding Padding_padding_isLoggedOut"></div>
     <main>
       <section class="Section_Section">
@@ -801,8 +814,11 @@
           </div>
         </div>
         <aside class="LineBanner_LineBanner">
-          <a href="">
-            <div class="LineBanner_LineBanner_link">
+        
+        
+        <!-- 미구현 페이지 이동 -->
+         <a href="<%-- javascript:location.href='${pageContext.request.contextPath}/write.board' --%>">      
+            <div class="LineBanner_LineBanner_link">           
               <div class="LineBanner_LineBanner_box LineBanner_LineBanner_gradient">
                 <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 18 18">
                   <defs>
@@ -818,6 +834,8 @@
               </div>
             </div>
           </a>
+          
+          
         </aside>
         <div class="CompanyChart_wrapper">
           <div class="CompanyChart_container">
@@ -1024,21 +1042,6 @@
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script type="text/javascript">
-
-$(".MainBar_hamberger").mouseenter(function(){
-  $(".OverlayJobCategory_Container").css("display","block");
- 
-});
-$(".Explore_Container").mouseleave(function(){
-  $(".OverlayJobCategory_Container").css("display","none");
-  $(".Explore_SubCategory").css("display","none");
-
-});
-$("#programming").mouseover(function(){
-  $(".Explore_SubCategory").css("display","block");
-});
-</script>
 <script type="text/javascript">
 let count = 1;
 const wrap = $("#slide-track");

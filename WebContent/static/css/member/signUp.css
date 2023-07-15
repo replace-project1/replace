@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Pretendard,'Pretendard JP','Pretendard Std',-apple-system,system-ui,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,'Apple SD Gothic Neo','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;
     box-sizing: border-box;
+    background-color: white;
 }
 
 div{
@@ -104,6 +105,8 @@ input::placeholder {
     font-size: 14px;
   }
 
+
+
   .back {
     border: none;
     background: none;
@@ -128,6 +131,32 @@ input::placeholder {
     margin-bottom: 8px;
 }
 
+.telinput {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.telinput1 {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
 select {
     padding-left: 12px;
     border: 1px solid #e1e2e3;
@@ -603,7 +632,7 @@ a{
 }
 
 .errorMsg{
-    height: 10px;
+    height: 25px;
     width: 100%;
     text-align: left;
     color: red;

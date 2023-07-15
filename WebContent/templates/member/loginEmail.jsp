@@ -21,7 +21,7 @@
                     <div class="box">
                         <h2 class="subtitle2">하나의 계정으로<br>더욱
                             편리하게</h2>
-                        <h3>원티드가 제공하는
+                        <h3>리플레이스가 제공하는
                             서비스를<br>하나의 계정으로 모두 이용할 수 있습니다.</h3>
                         <div class="emailbox">
                             <div class="email1">
@@ -71,7 +71,7 @@
             if (!emailRegex.test(email)) {
                 $(this).css("border-color", "red");
                 $(".errorMsg").css("opacity", 1);
-                $(".emailnext").css("background-color", "");
+                $(".emailnext").css("background-color", "white");
             } else {
                 $(this).css("border-color", "blue");
                 $(".errorMsg").css("opacity", 0);

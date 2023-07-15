@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre">
 		<attributes>
 			<attribute name="module" value="true"/>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+=======
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+>>>>>>> 6511aa97bc09cef63427f604c2beb4aa0370f432
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
 		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
+			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="D:/jsp/workspace/replace/WebContent/WEB-INF/lib/cos.jar"/>
@@ -21,5 +26,19 @@
 	<classpathentry exported="true" kind="lib" path="D:/jsp/workspace/replace/WebContent/WEB-INF/lib/org.json.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/jsp/workspace/replace/WebContent/WEB-INF/lib/standard.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/jsp/workspace/replace/WebContent/WEB-INF/lib/tomcat-dbcp.jar"/>
+=======
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/cos.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/jstl.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/mybatis-3.5.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/mysql-connector-j-8.0.31.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/org.json.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/standard.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/week_web_1900_cen/jsp/workspace/replace/WebContent/WEB-INF/lib/tomcat-dbcp.jar"/>
+>>>>>>> 6511aa97bc09cef63427f604c2beb4aa0370f432
 	<classpathentry kind="output" path="bin"/>
 </classpath>

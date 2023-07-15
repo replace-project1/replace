@@ -472,76 +472,154 @@ img {
     padding-top: 13px;
 }
 
-.List_List_table {
-    margin-bottom: 80px;
+.List_wrapper .Offers-header {
+    margin-top: -1px;
+    line-height: normal;
+    color: #999;
 }
 
-.List_List_table_tr {
-    background-color: #f8f8fa;
-    border-bottom: 1px solid rgba(209,209,209,.4);
+.List_wrapper .Offers-header ul {
+    margin-bottom: 8px;
 }
 
-.List_List_table_tr:active, .List_List_table_tr:hover {
-    background-color: #fafafa;
-}
-
-.List_List_table_tr {
+.List_row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    padding: 0 10px;
-    background: #fff;
-    border-bottom: 1px solid rgba(209,209,209,.4);
 }
 
-.List_List_table_td_company_name.table-header {
-    text-align: center;
+.List_wrapper .Offers-header .col-1 {
+    padding-left: 20px;
+}
+
+.List_row .col-1 {
+    width: 57.0886075949%;
+}
+
+.List_row .col-2 {
+    width: 22.7848101266%;
+}
+
+.List_wrapper .Offers-header .col-3 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.List_row .col-3 {
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -ms-flex-preferred-size: calc(21% + 34px);
-    flex-basis: calc(21% + 34px);
+    padding-right: 20px;
 }
 
-.List_List_table_td.table-header {
+.List_wrapper .Offers-header .statusInfoButton {
+    display: none;
+    margin-left: 5px;
+}
+
+.List_wrapper .Offers-empty {
+    margin: 100px 0;
+    color: #ccc;
+    font-size: 16px;
     text-align: center;
-    color: #171717;
-    font-size: 14px;
-    font-weight: 400;
 }
 
-.List_List_table_td_position {
-    -ms-flex: 1 0 20%;
-    flex: 1 0 20%;
+.List_wrapper .Offers-content {
+    position: relative;
 }
 
-.List_List_table_td {
-    font-size: 14px;
-    font-weight: 400;
+.Container_Profile:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.Nav_Nav {
+    position: relative;
+    line-height: normal;
+}
+
+.Nav_Nav_title>p {
+    font-size: 20px;
+    font-weight: 700;
     color: #333;
-    min-height: 44px;
-    line-height: 44px;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    word-break: break-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    padding: 50px 0 20px;
 }
 
-.List_List_table_td_due_date {
-    -ms-flex: 1 0 13%;
-    flex: 1 0 13%;
+.List_List_container>ul {
+    margin: -10px;
+    padding: 0;
+}
+
+.List_List_container>ul li {
+    width: 25%;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Card_className>a {
+    display: block;
+}
+
+.Card_className header {
+    padding-bottom: 75%;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+}
+
+.Card_className .body {
+    padding: 14px 0;
+}
+
+.Card_className .body .job-card-position {
+    position: relative;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-height: 2.4em;
+    overflow: hidden;
+    text-align: left;
+    word-break: break-word;
+}
+
+.Card_className .body .job-card-company-name {
+    color: #333;
+    font-weight: 600;
+}
+
+.Card_className .body .job-card-company-location, .Card_className .body .job-card-company-name {
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.Card_badge {
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 6px;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.List_List_container>ul:after {
+    display: block;
+    content: "";
+    clear: both;
 }
 
 .Container_Profile:after {

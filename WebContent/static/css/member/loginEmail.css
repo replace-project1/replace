@@ -6,6 +6,7 @@
     text-align: center;
         font-family: Pretendard,'Pretendard JP','Pretendard Std',-apple-system,system-ui,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,'Apple SD Gothic Neo','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;
     letter-spacing:-0.023em;
+    background-color: white;
 }
 
 
@@ -109,6 +110,7 @@ label{
     font: 16px;
     font-weight: bold;
     box-sizing: border-box;
+
 }
 
 .findid {
@@ -117,6 +119,7 @@ label{
     width: 100%;
     box-sizing: border-box;
     color: #767676;
+
 }
 
 hr {

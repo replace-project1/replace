@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko-KR" class="ko kr windows chrome blink">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/mypage/apply.css">
-    <title>apply</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../static/css/mypage/invited-seat.css">
+<title>invited-seat</title>
 </head>
 <body>
-     <div id="__next">
+ <div id="__next">
         <div role="presentation"class="NavBar_className" style="position: fixed; padding-right: initial;">
             <div class="MainBar_MainBar isLoggedIn" role="presentation">
                 <nav class="MainBar_MainBar_nav">
@@ -129,9 +129,9 @@
                 </button>
             </h2>
             <ul class="Nav_Nav_list">
-                <!-- <li>
+                <li>
                     <a href="https://www.wanted.co.kr/profile/status?type=matchup-all" class>열람한 자리</a>
-                </li> -->
+                </li>
                 <li>
                     <a href="https://www.wanted.co.kr/profile/status?type=matchup-likes">관심 있음</a>
                 </li>
@@ -147,7 +147,7 @@
     <div class="Status_className">
         <div class="Aside_className">
             <dl>
-                <dt>내가 원하는 회사</dt>
+                <dt>내 자리는 어디에?</dt>
                 <dd>
                     <ul>
                         <!-- <li class>
@@ -171,7 +171,7 @@
                         <li class="active">
                             <a href="https://www.wanted.co.kr/profile/status?type=matchup-offers" class>
                                 초대받은 자리
-                                 <div class="label_">2</div>
+                                <div class="label_">2</div>
                             </a>
                         </li>
                     </ul>
@@ -179,33 +179,34 @@
             </dl>
         </div>
         <section>
-            <div>
-                <div class="List_List_table">
-                    <div class="table-header List_List_table_tr">
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">지원 회사</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">지원한 자리</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">마감일자</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">진행상태</span>
-                    </div>
-                    <div class="table-header List_List_table_tr company">
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">발란(BALAAN)</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">백엔드 엔지니어 과장</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.07.31</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">초대 받음</span>
-                    </div>
-                    <div class="table-header List_List_table_tr company">
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">게임듀오</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">게임 프론트엔드 개발 대리</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.09.05</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">초대 받음</span>
-                    </div>
-                    <div class="table-header List_List_table_tr company" >
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">퓨쳐위즈(Futurewiz)</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">프론트엔드 엔지니어 차장</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.11.11</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">보류중</span>
-                    </div>
-                </div>
+                    <section class="invitation_section">
+                        <div class="invitation_div">
+                            <div class="invited_seats">
+                                <p class="invited_seats_title">초대받은 자리</p>
+                                </div>
+                                <div class="invitation_cards">
+                                    <a href="">
+                                        <div class="invitation_card">
+                                            <div class="company_wrapper">
+                                                <img src="../../static/images/invitation-card.png" alt="invitation-card">
+                                                <div class="company_position">[솔루션플랫폼실] 백엔드 엔지니어 <br> 과장 자리</div>
+                                                <div class="company_name">발란(BALAAN)</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="invitation_card">
+                                            <div class="company_wrapper">
+                                                <img src="../../static/images/invitation-card.png" alt="invitation-card">
+                                                <div class="company_position">[서버팀] 게임 프론트엔드 개발 <br> 대리 자리</div>
+                                                <div class="company_name">게임듀오</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
             </div>
         </section>
         <div class="MatchUpModal_modalContainer"></div>
