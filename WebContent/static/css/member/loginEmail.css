@@ -6,7 +6,6 @@
     text-align: center;
         font-family: Pretendard,'Pretendard JP','Pretendard Std',-apple-system,system-ui,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,'Apple SD Gothic Neo','Malgun Gothic','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol',sans-serif;
     letter-spacing:-0.023em;
-    background-color: white;
 }
 
 
@@ -94,7 +93,7 @@ label{
     font-weight: 950;
 }
 
-.emailnext{
+.loginEmail{
     margin: 30px 0px 10px;
     padding: 1px 6px;
     width: 100%;
@@ -104,21 +103,22 @@ label{
     border: none;
     font-size: 16px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: not-allowed;
     margin-top: 30px;
     color: #cccccc;
     font: 16px;
     font-weight: bold;
     box-sizing: border-box;
-
+	background-color: white;
 }
 
-.findid {
+.signUp {
     margin: 30px 0px 0px;
     border: none;
     width: 100%;
     box-sizing: border-box;
     color: #767676;
+    background-color: white;
 
 }
 

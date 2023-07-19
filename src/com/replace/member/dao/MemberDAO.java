@@ -18,16 +18,18 @@ public class MemberDAO {
 	public void join(MemberVO memberVO) {
 		sqlSession.insert("member.insert", memberVO);
 	}
+	
+//	이메일 중복검사
+	public String selectEmail(String memberEmail) {
+		return sqlSession.selectOne("member.selectEmail", memberEmail);
+	}
 /*		
 //	아이디 중복검사
 	public String selectIdentification(String memberIdentification) {
 		return sqlSession.selectOne("member.selectIdentification", memberIdentification);
 	}
 	
-//	이메일 중복검사
-	public String selectEmail(String memberEmail) {
-		return sqlSession.selectOne("member.selectEmail", memberEmail);
-	}
+
 	
 //	로그인
 	public Long login(String memberIdentification, String memberPassword) {

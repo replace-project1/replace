@@ -19,6 +19,28 @@ public class MemberFrontController extends HttpServlet {
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
+//		Email 체크
+		if(target.equals("checkEmailOk")) {
+			result = new CheckEmailOkController().execute(req, resp);
+		
+		}else if(target.equals("password")){
+			result = new Result();
+			result.setPath("templates/member/password.jsp");
+			
+		}else if(target.equals("signUp")){
+			result = new Result();
+			result.setPath("templates/member/signUp.jsp");
+			
+		}else if(target.equals("loginEmail")) {
+			result = new Result();
+			result.setPath("templates/member/loginEmail.jsp");
+			
+//		계정찾기
+		}else if(target.equals("findID")){
+			result = new Result();
+			result.setPath("templates/member/findID.jsp");
+		}		
+		
 		/*
 		 * if(target.equals("checkIdOk")) { result = new
 		 * CheckIdOkController().execute(req, resp);

@@ -8,6 +8,7 @@
 	
 	<typeAliases>
 		<!-- <typeAlias type="com.replace.board.domain.BoardVO" alias="boardVO"/> -->
+		<typeAlias type="com.replace.member.domain.MemberVO" alias="memberVO"/>
 	</typeAliases>
 
 	<environments default="mysql">
