@@ -3,11 +3,11 @@ package com.replace.member.domain;
 public class MemberVO {
 	// 객체 선언
 	private long id;
-	private String memberId;
 	private String memberName;
-	private String memberPassword;
 	private String memberEmail;
+	private String memberPassword;
 	private String phoneNumber;
+	private long memberReadCount;
 	
 	//기본 생성자 선언
 	// alt + shift + s 단축키를 이용해 getter, setter, toString 선언 hashCode, equals 재정의
@@ -22,28 +22,12 @@ public void setId(long id) {
 	this.id = id;
 }
 
-public String getMemberId() {
-	return memberId;
-}
-
-public void setMemberId(String memberId) {
-	this.memberId = memberId;
-}
-
 public String getMemberName() {
 	return memberName;
 }
 
 public void setMemberName(String memberName) {
 	this.memberName = memberName;
-}
-
-public String getMemberPassword() {
-	return memberPassword;
-}
-
-public void setMemberPassword(String memberPassword) {
-	this.memberPassword = memberPassword;
 }
 
 public String getMemberEmail() {
@@ -54,6 +38,14 @@ public void setMemberEmail(String memberEmail) {
 	this.memberEmail = memberEmail;
 }
 
+public String getMemberPassword() {
+	return memberPassword;
+}
+
+public void setMemberPassword(String memberPassword) {
+	this.memberPassword = memberPassword;
+}
+
 public String getPhoneNumber() {
 	return phoneNumber;
 }
@@ -62,10 +54,12 @@ public void setPhoneNumber(String phoneNumber) {
 	this.phoneNumber = phoneNumber;
 }
 
-@Override
-public String toString() {
-	return "MemberVO [id=" + id + ", memberId=" + memberId + ", memberName=" + memberName + ", memberPassword="
-			+ memberPassword + ", memberEmail=" + memberEmail + ", phoneNumber=" + phoneNumber + "]";
+public long getMemberReadCount() {
+	return memberReadCount;
+}
+
+public void setMemberReadCount(long memberReadCount) {
+	this.memberReadCount = memberReadCount;
 }
 
 @Override
@@ -88,5 +82,13 @@ public boolean equals(Object obj) {
 	if (id != other.id)
 		return false;
 	return true;
-	}
+}
+
+@Override
+public String toString() {
+	return "MemberVO [id=" + id + ", memberName=" + memberName + ", memberEmail=" + memberEmail + ", memberPassword="
+			+ memberPassword + ", phoneNumber=" + phoneNumber + ", memberReadCount=" + memberReadCount + "]";
+}
+	
+
 }
