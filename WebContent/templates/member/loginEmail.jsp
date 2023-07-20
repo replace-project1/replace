@@ -35,8 +35,8 @@
 								id="inputEmail" class="emailinsert">
 						</div>
 						<div class="errorMsg">올바른 이메일을 입력해주세요.</div>
-						<button type="button" id="send" class="loginEmail"
-						onclick="send()" >이메일로 계속하기</button>
+						<button type="button" id="send" class="loginEmail">
+						이메일로 계속하기</button>
 
 
 						<button type="button" class="signUp"
@@ -67,27 +67,5 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="../static/js/loginEmail.js"></script>
-<script>
-
-	$(document).ready(function() {
-		$(".emailinsert").on("input",function() {
-			let email = $(this).val();
-			let emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-
-			if (!emailRegex.test(email)) {
-				$(this).css("border-color","red");
-				$(".errorMsg").css("opacity", 1);
-				$(".loginEmail").css("background-color","white");
-				$(".loginEmail").onclick("return false;");
-			} else {
-				$(this).css("border-color","blue");
-				$(".errorMsg").css("opacity", 0);
-				$(".loginEmail").css("background-color","blue");
-				$(".loginEmail").css("cursor","pointer");
-		
-			}
-		});
-	});
-</script>
-
+<script src="${pageContext.request.contextPath}/static/js/modal/modal.js"></script>
 </html>

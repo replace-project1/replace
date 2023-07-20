@@ -23,7 +23,11 @@ public class MemberDAO {
 	public String selectEmail(String memberEmail) {
 		return sqlSession.selectOne("member.selectEmail", memberEmail);
 	}
-/*		
+//	password 확인
+	public String selectPassword(String memberPassword) {
+		return sqlSession.selectOne("member.selectPassword", memberPassword);
+	}
+	/*		
 //	아이디 중복검사
 	public String selectIdentification(String memberIdentification) {
 		return sqlSession.selectOne("member.selectIdentification", memberIdentification);
@@ -39,6 +43,7 @@ public class MemberDAO {
 		
 		return sqlSession.selectOne("member.login", loginMap);
 	}*/
+
 }
 
 

@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.replace.Result;
+import com.replace.member.controller.CheckEmailOkController;
+import com.replace.member.controller.PasswordOkController;
 
 public class MemberFrontController extends HttpServlet {
 
@@ -23,6 +25,9 @@ public class MemberFrontController extends HttpServlet {
 		if(target.equals("checkEmailOk")) {
 			result = new CheckEmailOkController().execute(req, resp);
 		
+		}else if(target.equals("passwordOk")){
+			result = new PasswordOkController().execute(req, resp);
+			
 		}else if(target.equals("password")){
 			result = new Result();
 			result.setPath("templates/member/password.jsp");
@@ -34,6 +39,14 @@ public class MemberFrontController extends HttpServlet {
 		}else if(target.equals("loginEmail")) {
 			result = new Result();
 			result.setPath("templates/member/loginEmail.jsp");
+			
+			/*
+			 * }else if(target.equals("loginOK")) { result = new Result();
+			 * result.setPath("main/index.jsp");
+			 */
+			
+			
+			
 			
 //		계정찾기
 		}else if(target.equals("findID")){

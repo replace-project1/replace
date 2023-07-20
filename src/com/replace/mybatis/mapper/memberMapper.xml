@@ -14,6 +14,11 @@
 	<select id="selectEmail" resultType="string">
 	select member_email from tbl_member where member_email = #{memberEmail}
 	</select>
+	
+	<select id="selectPassword" resultType="string">
+		select member_password from tbl_member 
+		where member_password = #{memberPassword}
+	</select>
 	<!--
 	<select id="selectIdentification" resultType="string">
 		select member_identification from tbl_member where member_identification = #{memberIdentification}

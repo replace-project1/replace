@@ -1,4 +1,4 @@
-package com.replace.member;
+package com.replace.member.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
