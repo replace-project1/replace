@@ -37,12 +37,12 @@
             </div>
 
             <!-- 비밀번호 관련 박스 -->
-            <form class="passwordbox">
+            <form class="passwordbox" name="passwordBox">
 
                 <div class="passwordTitle">
                     <label class="passwordText">비밀번호</label>
                 </div>
-
+				<input type="hidden" name="memberEmail" value="${memberEmail}">
                 <div style="position: relative;">
                     <input class="passwordInput" name="password" type="password" placeholder="비밀번호를 입력해주세요.">
                     <button class="eyeButton">
@@ -55,7 +55,8 @@
                 </div>
 
                 <div style="width: 100%;">
-                    <button class="loginNext">다음</button>
+                    <button class="loginNext" id="sendPassword" class="passwordSend">
+                    다음</button>
                 </div>
                 <button class="passwordManipulation">
                     <span class="passwordChangeText">비밀번호 초기화/변경</span>
@@ -80,5 +81,5 @@
         });
     });
 </script>
-
+<script src="../static/js/password.js"></script>
 </html>
