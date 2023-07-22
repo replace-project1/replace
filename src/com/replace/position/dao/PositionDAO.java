@@ -23,6 +23,10 @@ public class PositionDAO {
 		List<PositionDTO> list = sqlSession.selectList("position.selectlist", id);
 		return list;
 	}
+	
+	public List<PositionDTO> selectAllWithApplyCount(Long companyId){
+		return sqlSession.selectList("position.selectAllWithApplyCount", companyId);
+	}
 }
 
 
