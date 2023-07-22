@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 쿼리문 작성페이지 -->
-<mapper namespace="invitation">
+<mapper namespace="bookmark">
 
 <!-- 	<insert id="insert">
 		insert into tbl_member
@@ -13,6 +13,20 @@
 	<select id="selectIdentification" resultType="string">
 		select member_identification from tbl_member where member_identification = #{memberIdentification}
 	</select> -->
+	<select id="count" resultType="_int">
+		select count(id) from tbl_bookmark
+		where member_id = #{member_id}
+	</select>
+	<select id="bookmarkList" resultType = "positionDTO">
+		select tp.id, tp.position_name, tp.position_due_date, tc.company_name
+		from tbl_position tp join tbl_company tc 
+		on tp.company_id = tc.id
+		where tp.id in (
+			select position_id
+			from tbl_bookmark ta 
+			where member_id= #{id}
+		)
+	</select>
 	
 </mapper>
 

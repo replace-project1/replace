@@ -1,4 +1,4 @@
-package com.replace.apply;
+package com.replace.position;
 
 import java.io.IOException;
 
@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.replace.Result;
+import com.replace.position.controller.PositionController;
 
-public class applyFrontController extends HttpServlet {
+public class PositionFrontController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,6 +27,13 @@ public class applyFrontController extends HttpServlet {
 		 * } else if(target.equals("checkEmailOk")) { result = new
 		 * CheckEmailOkController().execute(req, resp);
 		 */
+		if (target.equals("positionList")) {
+			
+			result = new PositionController().execute(req, resp);
+			result.setPath("templates/mypage/apply.jsp");
+			result.setRedirect(false);
+		}
+		
 		
 		if(result != null) {
 			if(result.isRedirect()) {

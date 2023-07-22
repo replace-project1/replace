@@ -1,14 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import = "com.replace.member.domain.MemberVO"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../static/css/mypage/profile.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/profile.css">
 <title>profile</title>
 </head>
 <body>
+	<% MemberVO memberVO = (MemberVO)request.getAttribute("memberVO"); %>
 	<div id="__next">
         <div class="NavBar_className" style="position: fixed;" role="presentation">
             <div class="MainBar_MainBar isLoggedIn" role="presentation">
@@ -136,20 +137,20 @@
                             </div>
                         </div>
                         <div class="Aside-me">
-                            <div class="Aside-me_name">최유라</div>
-                            <div class="Aside-me_email">aprilchoi91@gmail.com</div>
-                            <div class="Aside-me_tel">010-7605-2258</div>
+                            <div class="Aside-me_name"><%=memberVO.getMemberName() %></div>
+                            <div class="Aside-me_email"><%=memberVO.getMemberEmail() %></div>
+                            <div class="Aside-me_tel"><%=memberVO.getMemberPhoneNumber() %></div>
                         </div>
                         <a href="https://id.wanted.jobs/profile/myinfo?amp_device_id=y6hkQNesXLA62-e4L8TvTi&service=wanted" class="Aside-edit" target="_blank" rel="noopener noreferrer">기본정보 수정</a>
                     </header>
                     <div class="MatchUpStatus MatchUpStatus_className">
                         <a href="https://www.wanted.co.kr/profile/status?type=matchup-likes" class="MatchUpStatus-item">
                             <span class="MatchUpStatus-label">관심 있음</span>
-                            <strong class="MatchUpStatus-value">0</strong>
+                            <strong class="MatchUpStatus-value"><%=request.getAttribute("bookmarkCount") %></strong>
                         </a>
                         <a href="https://www.wanted.co.kr/profile/status?type=matchup-opens" class="MatchUpStatus-item">
                             <span class="MatchUpStatus-label">열람</span>
-                            <strong class="MatchUpStatus-value">0</strong>
+                            <strong class="MatchUpStatus-value"><%=memberVO.getMemberReadCount() %></strong>
                         </a>
                         <a href="https://www.wanted.co.kr/profile/status?type=matchup-offers" class="MatchUpStatus-item">
                             <span class="MatchUpStatus-label">받은 제안</span>

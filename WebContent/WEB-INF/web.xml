@@ -13,14 +13,61 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+		<url-pattern>*.css</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.ico</url-pattern>
+		<url-pattern>*.swf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>*.jsp</url-pattern>
+		<url-pattern>*.jspx</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>Member</servlet-name>
 		<servlet-class>com.replace.member.MemberFrontController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>Member</servlet-name>
+		<servlet-name>Member</servlet-name> 
 		<url-pattern>*.member</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Apply</servlet-name>
+		<servlet-class>com.replace.apply.ApplyFrontController</servlet-class>
+	</servlet>
 
+	<servlet-mapping>
+		<servlet-name>Apply</servlet-name> 
+		<url-pattern>*.apply</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Position</servlet-name>
+		<servlet-class>com.replace.position.PositionFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Position</servlet-name> 
+		<url-pattern>*.position</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Bookmark</servlet-name>
+		<servlet-class>com.replace.bookmark.BookmarkFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Bookmark</servlet-name> 
+		<url-pattern>*.bookmark</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

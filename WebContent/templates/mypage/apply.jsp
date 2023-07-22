@@ -1,11 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko-KR" class="ko kr windows chrome blink">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/mypage/apply.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/apply.css">
     <title>apply</title>
 </head>
 <body>
@@ -159,13 +161,13 @@
                         <li class>
                             <a href="https://www.wanted.co.kr/profile/status?type=matchup-all">
                                 북마크
-                                <div class="label_">12</div>
+                                <div class="label_"><%=request.getAttribute("bookmark") %></div>
                             </a>
                         </li>
                         <li class>
                             <a href="https://www.wanted.co.kr/profile/status?type=matchup-all">
                                 지원한 자리
-                                <div class="label_">5</div>
+                                <div class="label_"><%=request.getAttribute("applied") %></div>
                             </a>
                         </li>
                         <li class="active">
@@ -187,24 +189,19 @@
                         <span class="table-header List_List_table_td List_List_table_td_due_date">마감일자</span>
                         <span class="table-header List_List_table_td List_List_table_td_status">진행상태</span>
                     </div>
-                    <div class="table-header List_List_table_tr company">
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">발란(BALAAN)</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">백엔드 엔지니어 과장</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.07.31</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">초대 받음</span>
-                    </div>
-                    <div class="table-header List_List_table_tr company">
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">게임듀오</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">게임 프론트엔드 개발 대리</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.09.05</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">초대 받음</span>
-                    </div>
-                    <div class="table-header List_List_table_tr company" >
-                        <span class="table-header List_List_table_td List_List_table_td_company_name">퓨쳐위즈(Futurewiz)</span>
-                        <span class="table-header List_List_table_td List_List_table_td_position">프론트엔드 엔지니어 차장</span>
-                        <span class="table-header List_List_table_td List_List_table_td_due_date">23.11.11</span>
-                        <span class="table-header List_List_table_td List_List_table_td_status">보류중</span>
-                    </div>
+                    <c:forEach var = "vo" items = "${list }">
+                    	<div class="table-header List_List_table_tr company">
+                        	<span class="table-header List_List_table_td List_List_table_td_company_name">${vo.companyName }</span>
+                        	<span class="table-header List_List_table_td List_List_table_td_position">${vo.positionName}</span>
+                        	<span class="table-header List_List_table_td List_List_table_td_due_date">${vo.positionDueDate}</span>
+                        	<span class="table-header List_List_table_td List_List_table_td_status">초대 받음</span>
+                    	</div>
+                    </c:forEach>
+                    <c:if test="${empty list }">
+                    	${"데이터가 없습니다" }
+                    </c:if>
+                    
+                    
                 </div>
             </div>
         </section>

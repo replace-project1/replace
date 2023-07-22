@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko-KR" class="ko kr windows chrome blink">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../static/css/mypage/bookmark.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/bookmark.css">
 <title>bookmark</title>
 </head>
 <body>
@@ -119,162 +120,26 @@
             <div class="List_List">
                 <div class="List_List_container">
                     <ul class="job-list">
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Card_className">
-                                <a href="https://www.wanted.co.kr/wd/165485">
-                                    <header style="background-image: url(balaan.webp) ;">
-                                    </header>
-                                    <div class="body">
-                                        <div class="job-card-position">[솔루션플랫폼실] 백엔드 엔지니어 주니어</div>
-                                        <div class="job-card-company-name">발란(BALAAN)</div>
-                                        <div class="Card_badge"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                    	<c:forEach var = "vo" items = "${list }">
+                    		<li>
+                            	<div class="Card_className">
+                                	<a href="https://www.wanted.co.kr/wd/165485">
+                                    	<header style="background-image: url(balaan.webp) ;">
+                                    	</header>
+                                    	<div class="body">
+                                    	    <div class="job-card-position">${vo.positionName }</div>
+                                    	    <div class="job-card-company-name">${vo.companyName }</div>
+                                    	    <div class="Card_badge"></div>
+                                    	</div>
+                               		 </a>
+                        	    </div>
+                        	</li>
+                    	</c:forEach>
+                        <c:if test="${empty list }">
+                    		${"데이터가 없습니다" }
+                 	  	</c:if>
+                        
+                        
                         <div></div>
                     </ul>
                 </div>

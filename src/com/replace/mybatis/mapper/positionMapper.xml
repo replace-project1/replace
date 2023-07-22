@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 쿼리문 작성페이지 -->
-<mapper namespace="file">
+<mapper namespace="position">
 
 <!-- 	<insert id="insert">
 		insert into tbl_member
@@ -13,6 +13,21 @@
 	<select id="selectIdentification" resultType="string">
 		select member_identification from tbl_member where member_identification = #{memberIdentification}
 	</select> -->
+	<select id="select" resultType="PositionVO">
+		select id, position_name, position_due_date,position_detail,company_id
+		from tbl_position
+		where id = #{id}
+	</select>
+	<select id="selectlist" resultType="PositionDTO">
+		select tp.id, tp.position_name, tp.position_due_date, tc.company_name
+		from tbl_position tp join tbl_company tc 
+		on tp.company_id = tc.id
+		where tp.id in (
+			select position_id
+			from tbl_apply ta 
+			where member_id=#{id}
+		)
+	</select>
 	
 </mapper>
 

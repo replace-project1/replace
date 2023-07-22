@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../static/css/mypage/invited-seat.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/mypage/invited-seat.css">
 <title>invited-seat</title>
 </head>
 <body>
@@ -188,7 +188,7 @@
                                     <a href="">
                                         <div class="invitation_card">
                                             <div class="company_wrapper">
-                                                <img src="../../static/images/invitation-card.png" alt="invitation-card">
+                                                <img src="${pageContext.request.contextPath}/static/images/invitation-card.png" alt="invitation-card">
                                                 <div class="company_position">[솔루션플랫폼실] 백엔드 엔지니어 <br> 과장 자리</div>
                                                 <div class="company_name">발란(BALAAN)</div>
                                             </div>
@@ -197,7 +197,7 @@
                                     <a href="">
                                         <div class="invitation_card">
                                             <div class="company_wrapper">
-                                                <img src="../../static/images/invitation-card.png" alt="invitation-card">
+                                                <img src="${pageContext.request.contextPath}/static/images/invitation-card.png" alt="invitation-card">
                                                 <div class="company_position">[서버팀] 게임 프론트엔드 개발 <br> 대리 자리</div>
                                                 <div class="company_name">게임듀오</div>
                                             </div>

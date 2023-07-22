@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,14 +17,7 @@
 
 <body>
 
- <c:choose>
-   <c:when test=""${not empty sessionScope.memberEmail}"">
-     <jsp:include page="../templates/header/loginHeader.jsp"/>
-   </c:when>
-   <c:otherwise>
-     <jsp:include page="../templates/header/logoutHeader.jsp"/>
-   </c:otherwise>
- </c:choose>
+<jsp:include page="../templates/header/loginHeader.jsp"/>
 
     <div class="Padding_padding Padding_padding_isLoggedOut"></div>
     <main>
@@ -175,8 +169,8 @@
         <aside class="LineBanner_LineBanner">
         
         
-        <!-- 미구현 페이지 이동 -->
-         <a href="<%-- javascript:location.href='${pageContext.request.contextPath}/write.board' --%>">      
+
+         <a href="javascript:location.href='${pageContext.request.contextPath}/apply.apply'">      
             <div class="LineBanner_LineBanner_link">           
               <div class="LineBanner_LineBanner_box LineBanner_LineBanner_gradient">
                 <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 18 18">
@@ -203,7 +197,7 @@
                       <span class="Typography_typography Typography_typography_B1 Typography_typography_medium">
                           기업목록
                       </span>
-                      <a href="../company-list/companyList.jsp" class="Typography_typography Typography_typography_B1 Typography_typography_medium More-View">
+                      <a href="<%-- javascript:location.href='${pageContext.request.contextPath}/company-detail.company' --%>" class="Typography_typography Typography_typography_B1 Typography_typography_medium More-View">
                         +더보기
                       </a>
                   </div>
@@ -212,7 +206,7 @@
                   <!-- 메인 페이지 기업목록 시작 -->
                   <div>
                       <div class="RecruitMainCardList_card-wrap">
-                          <a href="../company-detail/company-detail.jsp">
+                          <a href="<%-- javascript:location.href='${pageContext.request.contextPath}/company-detail.company' --%>">
                               <div class="RecruitMainCardList_card-border-wrap"></div>
                           
                           	<div class="RecruitMainCardList_card-content">
@@ -264,6 +258,9 @@
       <footer class="Footer_footerClass">
         <div class="Footer_rowClass">
           <div class="NavLinks_NavLinks">
+          
+          
+           <!-- 피드 링크  -->
             <a
               class="NavLinks_NavLinks_logo"
               href="https://www.wanted.co.kr/jobsfeed">
@@ -300,8 +297,7 @@
               </svg>
             </a>
             <div class="NavLinks_NavLinks_links">
-              <a
-                href="https://www.wantedlab.com/"
+              <a href="${pageContext.request.contextPath}qna.board"
                 class=""
                 target="_blank"
                 >Q&A
@@ -390,16 +386,23 @@
         </div>
         <div class="Footer_rowClass Footer_border">
           <p class="Footer_footerText kr">
-            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 |
-            통신판매번호 : 2020-서울송파-3147<br/>유료직업소개사업등록번호 : (국내)
-            제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118<br/>©
-            Wantedlab, Inc.
+					(주)Replace<br> 팀장:alert-Enoch - 최에녹 | 부팀장:dev-PatrickLee - 이승환
+					<br> 팀원: dev-aprilchoi - 최유라, dev-HJ0309 - 주현진,
+					spaghetticutter - 강민준 <br> 서울특별시 강남구 테헤란로 146 현익빌딩 3,4층 ©
+					Replace Lab, Inc.
           </p>
         </div>
       </footer>
     </main>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+<script>
+	let contextPath = "${pageContext.request.contextPath}";
+	let memberId = "${sessionScope.memberId}";
+</script>
+
 <script type="text/javascript">
 let count = 1;
 const wrap = $("#slide-track");

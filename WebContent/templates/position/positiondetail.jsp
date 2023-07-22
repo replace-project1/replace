@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>포지션 상세보기</title>
-	<link rel="stylesheet" href="../static/css/main/main.css" />
-    <link rel="stylesheet" href="../static/css/main/menu.css" />
-    <link rel="stylesheet" href="../static/css/company-detail/company-detail.css" />
+	<link rel="stylesheet" href="../../static/css/main/main.css" />
+    <link rel="stylesheet" href="../../static/css/main/menu.css" />
+    <link rel="stylesheet" href="../../static/css/company-detail/company-detail.css" />
+    <link rel="stylesheet" href="../../static/css/modal/modal.css" />
 </head>
 <body>
  <!-- ----------------- 상단 배너 시작 ----------------- -->
@@ -736,6 +737,32 @@
                     </a>
                   </div>
                 </section>
+                <div class="applicants-list">
+                  <h1>지원자 목록</h1>
+                  <table border="1" width ="70%" align = "center" style="text-align: center; align-items: center;" >
+                    <th style="width: 10%">번호</th>
+                    <th style="width: 50%">지원자 이름</th>
+                    <th style="width: 20%">지원자 id</th>
+                    <hr>
+                    <tr class="applicant">
+                        <td>1</td>
+                        <td class="name">홍길동</td>
+                        <td class="id">hgd1234</td>
+                        <td class="btn-container">
+                          <button class="applicant-detail-btn" type="button" style="display: block; background-color: #aaf;">상세보기</button>
+                        </td>
+                    </tr>
+                    <tr class="applicant">
+                      <td>2</td>
+                      <td class="name">김철수</td>
+                      <td class="id">kcs7777</td>
+                      <td class="btn-container">
+                        <button class="applicant-detail-btn" type="button" style="display: block; background-color: #aaf;">상세보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                </div>
               </div>
             </div>
             <aside class="JobProcess_container" style="top: 70px;">
@@ -898,6 +925,15 @@
       <!---------------------- footer 끝 ---------------------->
 
     </main>
+    <div class="modal">
+      <div class="modalBox"">
+        <div id="applicant-name">name</div>
+        <div id="applicant-id">id</div>
+        <div id="applicant-resume">resume</div>
+        
+        <button class="closeBtn" type="button" style="display: block; background-color: #aaf;">닫기</button>
+      </div>
+    </div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script type="text/javascript">
@@ -915,4 +951,26 @@ $("#programming").mouseover(function(){
   $(".Explore_SubCategory").css("display","block");
 });
 </script>
+<script>
+    const applicant = $(".applicant");
+    const modal = $(".modal");
+
+    const open = () => {
+      console.log(modal.css("display"));
+    }
+
+    const close = () => {
+      modal.css("display", "none");
+    }
+    applicant.each(function(index,a){
+      $(a).children(".btn-container").children(".applicant-detail-btn").click(function(){
+        modal.children(".modalBox").children("#applicant-name").text($(a).children(".name").text());
+        modal.children(".modalBox").children("#applicant-id").text($(a).children(".id").text());
+
+        modal.css("display", "flex");
+      });
+    });
+    $(".closeBtn").click(close);
+
+  </script>
 </html>

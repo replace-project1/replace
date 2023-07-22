@@ -34,8 +34,8 @@
                             <div>
                                 <div class="text"> 이메일</div>
                                 <!-- 입력받은 이메일을 가져옴 -->
-                                <input type="email" placeholder="" name="email" class="input"
-                                    value="kangminjun99@gmail.com" disabled="">
+                                <input type="email" placeholder="" name="loginEmail" class="input"
+                                    value="${memberEmail}" disabled="">
                             </div>
                             <!-- 이름 -->
                             <div>

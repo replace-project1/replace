@@ -8,6 +8,10 @@
 	
 	<typeAliases>
 		<!-- <typeAlias type="com.replace.board.domain.BoardVO" alias="boardVO"/> -->
+		<typeAlias type="com.replace.member.domain.MemberVO" alias="memberVO"/>
+		<typeAlias type="com.replace.position.domain.PositionVO" alias="positionVO"/>
+		<typeAlias type="com.replace.position.domain.PositionDTO" alias="positionDTO"/>
+		<typeAlias type="com.replace.bookmark.domain.BookmarkVO" alias="bookmarkVO"/>
 	</typeAliases>
 
 	<environments default="mysql">
@@ -15,7 +19,7 @@
 			<transactionManager type="JDBC"/>
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-														<!-- 프로젝트 이름 : replace -->
+														<!-- 프로젝트 이름 : project_replace -->
 				<property name="url" value="jdbc:mysql://localhost:3306/project_replace"/>
 				<property name="username" value="root"/>
 				<property name="password" value="1234"/>

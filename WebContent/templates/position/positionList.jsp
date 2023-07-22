@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>기업목록</title>
-	<link rel="stylesheet" href="../static/css/main/main.css" />
-   	<link rel="stylesheet" href="../static/css/main/menu.css" />
-    <link rel="stylesheet" href="../static/css/company-list/companyList.css" />
+	<link rel="stylesheet" href="../../static/css/main/main.css" />
+   	<link rel="stylesheet" href="../../static/css/main/menu.css" />
+    <link rel="stylesheet" href="../../static/css/company-list/companyList.css" />
 </head>
 <body>
 	
