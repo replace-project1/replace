@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.replace.Result;
+import com.replace.member.controller.CheckEmailOkController;
+import com.replace.member.controller.MyPageController;
+import com.replace.member.controller.PasswordOkController;
 
 public class MemberFrontController extends HttpServlet {
 
@@ -18,6 +21,40 @@ public class MemberFrontController extends HttpServlet {
 //		사용자가 요청한 전체 URI 중에서 확장자 앞의 문자열 값을 분리
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
+		
+//		Email 체크
+		if(target.equals("checkEmailOk")) {
+			result = new CheckEmailOkController().execute(req, resp);
+		
+		}else if(target.equals("passwordOk")){
+			result = new PasswordOkController().execute(req, resp);
+			
+		}else if(target.equals("password")){
+			result = new Result();
+			result.setPath("templates/member/password.jsp");
+			
+		}else if(target.equals("signUp")){
+			result = new Result();
+			result.setPath("templates/member/signUp.jsp");
+			
+		}else if(target.equals("loginEmail")) {
+//			result = new Result();
+			result.setPath("templates/member/loginEmail.jsp");
+			/*
+			 * }else if(target.equals("loginOK")) { result = new Result();
+			 * result.setPath("main/index.jsp");
+			 */
+//		계정찾기
+		}else if(target.equals("findID")){
+			result = new Result();
+			result.setPath("templates/member/findID.jsp");
+		}else if(target.equals("myPage")) {
+			result = new MyPageController().execute(req, resp);
+			result.setPath("templates/mypage/myPage.jsp");
+		}else if (target.equals("profile")) {
+			result = new MyPageController().execute(req, resp);
+			result.setPath("templates/mypage/profile.jsp");
+		}
 		
 		/*
 		 * if(target.equals("checkIdOk")) { result = new

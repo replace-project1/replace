@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 :root {
     --nav-height: 50px;
 }
@@ -530,9 +529,9 @@ img {
     border-radius: 5px;
 }
 
-.Aside_Point {
+/* .Aside_Point {
     padding: 30px 20px;
-}
+} */
 
 .Aside_Aside_contents>div {
     border-top: 1px solid #e1e2e3;
@@ -604,6 +603,7 @@ img {
 
 .Aside_Profile_info>dl>dd:first-of-type {
     padding-top: 20px;
+    padding-bottom : 5px;
 }
 
 .Aside_Profile_info>dl>dd {

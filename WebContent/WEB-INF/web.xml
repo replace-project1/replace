@@ -13,66 +13,61 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.js</url-pattern>
+		<url-pattern>*.css</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.ico</url-pattern>
+		<url-pattern>*.swf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>*.jsp</url-pattern>
+		<url-pattern>*.jspx</url-pattern>
+	</servlet-mapping>
+	
 	<servlet>
 		<servlet-name>Member</servlet-name>
 		<servlet-class>com.replace.member.MemberFrontController</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>Member</servlet-name>
+		<servlet-name>Member</servlet-name> 
 		<url-pattern>*.member</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>Main</servlet-name>
-		<servlet-class>com.replace.main.MainFrontController</servlet-class>
+		<servlet-name>Apply</servlet-name>
+		<servlet-class>com.replace.apply.ApplyFrontController</servlet-class>
 	</servlet>
-  
-  	<servlet-mapping>
-  		<servlet-name>Main</servlet-name>
-  		<url-pattern>*.main</url-pattern>
-  	</servlet-mapping>
-  
-  
-  	<servlet>
-		<servlet-name>Board</servlet-name>
-		<servlet-class>com.replace.board.BoardFrontController</servlet-class>
-	</servlet>
-  
-  	<servlet-mapping>
-  		<servlet-name>Board</servlet-name>
-  		<url-pattern>*.board</url-pattern>
-  	</servlet-mapping>
-  
- <!--    	<servlet>
-		<servlet-name>Position</servlet-name>
-		<servlet-class>com.replace.mypage.positionFrontController</servlet-class>
-	</servlet>
-  
-  	<servlet-mapping>
-  		<servlet-name>Position</servlet-name>
-  		<url-pattern>*.position</url-pattern>
-  	</servlet-mapping>
-  	
-  	<servlet>
-		<servlet-name>Invitation</servlet-name>
-		<servlet-class>com.replace.invitation.invitationFrontController</servlet-class>
-	</servlet>
-  
-  	<servlet-mapping>
-  		<servlet-name>Invitation</servlet-name>
-  		<url-pattern>*.invitation</url-pattern>
-  	</servlet-mapping>
-  	
-  	<servlet>
-		<servlet-name>Company</servlet-name>
-		<servlet-class>com.replace.company.companyFrontController</servlet-class>
-	</servlet>
-  
-  	<servlet-mapping>
-  		<servlet-name>company</servlet-name>
-  		<url-pattern>*.company</url-pattern>
-  	</servlet-mapping> -->
-  
 
+	<servlet-mapping>
+		<servlet-name>Apply</servlet-name> 
+		<url-pattern>*.apply</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Position</servlet-name>
+		<servlet-class>com.replace.position.PositionFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Position</servlet-name> 
+		<url-pattern>*.position</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Bookmark</servlet-name>
+		<servlet-class>com.replace.bookmark.BookmarkFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Bookmark</servlet-name> 
+		<url-pattern>*.bookmark</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
