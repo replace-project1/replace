@@ -45,10 +45,15 @@ public class MemberDAO {
 	}*/
 
 //	회원정보 조회
-	public MemberVO selectMember(String memberId) {
-		return sqlSession.selectOne("member.myPage", memberId);
+	public MemberVO selectMember(String Id) {
+		return sqlSession.selectOne("member.myPage", Id);
 	}
+<<<<<<< HEAD
 
+=======
+	
+	
+>>>>>>> adeb348028e3d76a0bebdb906716cf92da9b840a
 }
 
 
