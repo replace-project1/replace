@@ -32,7 +32,7 @@ public class MemberDAO {
 	public String selectIdentification(String memberIdentification) {
 		return sqlSession.selectOne("member.selectIdentification", memberIdentification);
 	}
-	
+
 
 	
 //	로그인
@@ -44,6 +44,11 @@ public class MemberDAO {
 		return sqlSession.selectOne("member.login", loginMap);
 	}*/
 
+//	회원정보 조회
+	public MemberVO selectMember(String memberId) {
+		return sqlSession.selectOne("member.myPage", memberId);
+	}
+	
 }
 
 

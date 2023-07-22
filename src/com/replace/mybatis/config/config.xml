@@ -9,6 +9,9 @@
 	<typeAliases>
 		<!-- <typeAlias type="com.replace.board.domain.BoardVO" alias="boardVO"/> -->
 		<typeAlias type="com.replace.member.domain.MemberVO" alias="memberVO"/>
+		<typeAlias type="com.replace.position.domain.PositionVO" alias="positionVO"/>
+		<typeAlias type="com.replace.position.domain.PositionDTO" alias="positionDTO"/>
+		<typeAlias type="com.replace.bookmark.domain.BookmarkVO" alias="bookmarkVO"/>
 	</typeAliases>
 
 	<environments default="mysql">

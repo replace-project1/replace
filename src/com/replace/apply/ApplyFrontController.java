@@ -1,4 +1,4 @@
-package com.replace.position;
+package com.replace.apply;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.replace.Result;
 
-public class positionFrontController extends HttpServlet {
+public class ApplyFrontController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,6 +26,9 @@ public class positionFrontController extends HttpServlet {
 		 * } else if(target.equals("checkEmailOk")) { result = new
 		 * CheckEmailOkController().execute(req, resp);
 		 */
+		if (target.equals("applyList")) {
+			
+		}
 		
 		if(result != null) {
 			if(result.isRedirect()) {

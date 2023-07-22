@@ -1,14 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import = "com.replace.member.domain.MemberVO"%>
 <!DOCTYPE html>
 <html lang="ko-KR" class="ko kr windows chrome blink">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../../static/css/mypage/myPage.css">
+
 <title>myPage</title>
+<link href="${pageContext.request.contextPath}/static/css/mypage/myPage.css" rel="stylesheet" type="text/css">
+<head>
+</head> 
 </head>
 <body>
+	<% MemberVO memberVO = (MemberVO)request.getAttribute("memberVO"); %>
 	<div id="__next">
         <div role="presentation"class="NavBar_className" style="position: fixed; padding-right: initial;">
             <div class="MainBar_MainBar isLoggedIn" role="presentation">
@@ -20,7 +24,7 @@
                         </button>
                         <a href="https://www.wanted.co.kr/jobsfeed" class="MainBar_MainBar_logo">
                             <!-- <svg width="74" height="21" viewBox="0 0 140 32"> -->
-                                <img alt="" src="../../static/images/horizontal-logo.png" width="120px" height="50px">
+                                <img alt="" src="${pageContext.request.contextPath}/static/images/horizontal-logo.png" width="120px" height="50px">
                             <!-- </svg> -->
                         </a>
                     </div>
@@ -28,7 +32,7 @@
                 </div>
                 <ul class="Menu_className__gGcYQ">
                     <li data-attribute-id="gnb">
-                        <a href="../../templates/mypage/myPage.jsp">MY 리플레이스</a>
+                        <a href="${pageContext.request.contextPath}/templates/mypage/myPage.jsp">MY 리플레이스</a>
                     </li>
                     <li class="smMoreVisible">
                         <a href="https://www.wanted.co.kr/cv/list">프로필</a>
@@ -87,7 +91,7 @@
                         <li class="mdMoreVisible profileBox Aside_hasNewMywantedAlarm__p2Tfv">
                             <button type="button" class="profileButton">
                                 <div class="avatarBorder">
-                                    <div class="avatarImage" style="background-image: url(../../static/images/aprilProfile.jpg);"></div>
+                                    <div class="avatarImage" style="background-image: url(${pageContext.request.contextPath}/static/images/aprilProfile.jpg);"></div>
                                 </div>
                             </button>
                             <span class="Badge_Badge" style="background-color: rgb(51, 102, 255); width: 13px; height: 13px;">
@@ -138,11 +142,11 @@
                         <div class="Avatar_Avatar Avatar_Avatar__sizeMedium Aside_Profile_avatar">
                             <img src="https://static.wanted.co.kr/oneid-user/TCTirF9tTrbasfbcytR8Ff/ebf29a787dfdbe015d61e22d6efa0d00f1e1fd0951a10af37a5249a21a72236a" alt="최유라 프로필 이미지" class="Avatar_Avatar__img">
                         </div>
-                        <a href="../../templates/mypage/account-mngt.jsp" class="Aside_Profile_info" target="_blank" rel="noopener noreferrer">
+                        <a href="${pageContext.request.contextPath}/templates/mypage/account-mngt.jsp" class="Aside_Profile_info" target="_blank" rel="noopener noreferrer">
                             <dl>
-                                <dt>최유라</dt>
-                                <dd>aprilchoi91@gmail.com</dd>
-                                <dd>010-7605-2258</dd>
+                                <dt><%=memberVO.getMemberName()%></dt>
+                                <dd><%=memberVO.getMemberEmail()%></dd>
+                                <dd><%=memberVO.getMemberPhoneNumber()%></dd>
                             </dl>
                         </a>
                         <div class="Aside_InterestTags">
@@ -180,11 +184,11 @@
                                         </svg>
                                     </button>
                                 </span>
-                                <strong class>12</strong>
+                                <strong class><%=request.getAttribute("bookmarkCount") %></strong>
                             </a>
                             <a href="https://www.wanted.co.kr/profile/status?type=matchup-opens" class>
                                 <span>지원한 자리</span>
-                                <strong class>5</strong>
+                                <strong class><%=request.getAttribute("applyCount") %></strong>
                             </a>
                             <a href="https://www.wanted.co.kr/profile/status?type=matchup-offers" class>
                                 <span>초대받은 자리</span>
@@ -212,7 +216,7 @@
                     <ul class="Summary_Summary_status">
                         <li>
                             <a href="https://www.wanted.co.kr/status/applications?status=complete&q&start_date=&end_date=" class>
-                                <em class>5</em>
+                                <em class><%=request.getAttribute("applyCount") %></em>
                                 <span>지원 완료</span>
                             </a>
                         </li>

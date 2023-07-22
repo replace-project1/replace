@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 쿼리문 작성페이지 -->
-<mapper namespace="position">
+<mapper namespace="apply">
 
 <!-- 	<insert id="insert">
 		insert into tbl_member
@@ -13,6 +13,10 @@
 	<select id="selectIdentification" resultType="string">
 		select member_identification from tbl_member where member_identification = #{memberIdentification}
 	</select> -->
+	<select id="count" resultType = "_int">
+		select count(id) from tbl_apply
+		where member_id = #{member_id}
+	</select>
 	
 </mapper>
 

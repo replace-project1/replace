@@ -13,7 +13,9 @@ public class ApplyDAO {
 	public ApplyDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
-	
+	public int applyCount(String memberId) {
+		return sqlSession.selectOne("apply.count", memberId);
+	}
 }
 
 
