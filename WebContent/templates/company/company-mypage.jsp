@@ -1,13 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>company myPage</title>
-	<link rel="stylesheet" href="../../static/css/main/main.css" />
-   	<link rel="stylesheet" href="../../static/css/main/menu.css" />
-   	<link rel="stylesheet" href="../../static/css/modal/modal.css" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/main.css" />
+   	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/menu.css" />
+   	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/modal/modal.css" />
    	
 </head>
 <body>
@@ -668,20 +669,15 @@
                     <th style="width: 20%">마감일</th>
                     <th style="width: 100px">지원자수</th>
                     <hr>
-                    <tr>
-                        <td>1</td>
-                        <td><a href="position-detail.html">포지션 이름</a></td>
-                        <td>yyyy-mm-dd</td>
-                        <td>n 명</td>
-                        <td><button id="position-delete-button" type="button" style="display: block; background-color: #faa;">공고삭제</button></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td><a href="position-detail.html">포지션 이름</a></td>
-                      <td>yyyy-mm-dd</td>
-                      <td>n 명</td>
-                      <td><button id="position-delete-button" type="button" style="display: block; background-color: #faa;">공고삭제</button></td>
-                  </tr>
+                    <c:forEach var="position" items="${positions}">
+	                    <tr>
+	                        <td>${position.id}</td>
+	                        <td><a href="position-detail.html">${position.positionName}</a></td>
+	                        <td>${position.positionDueDate}</td>
+	                        <td>${position.applyCount} 명</td>
+	                        <td><button id="position-delete-button" type="button" style="display: block; background-color: #faa;">공고삭제</button></td>
+	                    </tr>
+	               </c:forEach>
                 </table>
                 <hr style="opacity: 0;">
                 <button id="position-apply-button" type="button" style="display: block; background-color: #aaf; margin-left: 60%;">채용공고 등록</button>
