@@ -22,5 +22,57 @@
 		<servlet-name>Member</servlet-name>
 		<url-pattern>*.member</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>com.replace.main.MainFrontController</servlet-class>
+	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>Main</servlet-name>
+  		<url-pattern>*.main</url-pattern>
+  	</servlet-mapping>
+  
+  
+  	<servlet>
+		<servlet-name>Board</servlet-name>
+		<servlet-class>com.replace.board.BoardFrontController</servlet-class>
+	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>Board</servlet-name>
+  		<url-pattern>*.board</url-pattern>
+  	</servlet-mapping>
+  
+ <!--    	<servlet>
+		<servlet-name>Position</servlet-name>
+		<servlet-class>com.replace.mypage.positionFrontController</servlet-class>
+	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>Position</servlet-name>
+  		<url-pattern>*.position</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>Invitation</servlet-name>
+		<servlet-class>com.replace.invitation.invitationFrontController</servlet-class>
+	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>Invitation</servlet-name>
+  		<url-pattern>*.invitation</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-name>Company</servlet-name>
+		<servlet-class>com.replace.company.companyFrontController</servlet-class>
+	</servlet>
+  
+  	<servlet-mapping>
+  		<servlet-name>company</servlet-name>
+  		<url-pattern>*.company</url-pattern>
+  	</servlet-mapping> -->
+  
 
 </web-app>
