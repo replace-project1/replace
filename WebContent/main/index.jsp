@@ -386,10 +386,10 @@
         </div>
         <div class="Footer_rowClass Footer_border">
           <p class="Footer_footerText kr">
-            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 |
-            통신판매번호 : 2020-서울송파-3147<br/>유료직업소개사업등록번호 : (국내)
-            제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118<br/>©
-            Wantedlab, Inc.
+					(주)Replace<br> 팀장:alert-Enoch - 최에녹 | 부팀장:dev-PatrickLee - 이승환
+					<br> 팀원: dev-aprilchoi - 최유라, dev-HJ0309 - 주현진,
+					spaghetticutter - 강민준 <br> 서울특별시 강남구 테헤란로 146 현익빌딩 3,4층 ©
+					Replace Lab, Inc.
           </p>
         </div>
       </footer>
