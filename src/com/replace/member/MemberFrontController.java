@@ -40,6 +40,10 @@ public class MemberFrontController extends HttpServlet {
 		}else if(target.equals("loginEmail")) {
 			result = new Result();
 			result.setPath("templates/member/loginEmail.jsp");
+			
+		}else if(target.equals("main")) {
+			result = new Result();
+			result.setPath("main/index.jsp");
 			/*
 			 * }else if(target.equals("loginOK")) { result = new Result();
 			 * result.setPath("main/index.jsp");

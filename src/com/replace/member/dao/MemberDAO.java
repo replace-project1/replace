@@ -48,14 +48,7 @@ public class MemberDAO {
 	public MemberVO selectMember(String Id) {
 		return sqlSession.selectOne("member.myPage", Id);
 	}
-<<<<<<< HEAD
-
-=======
-	
-	
->>>>>>> adeb348028e3d76a0bebdb906716cf92da9b840a
 }
-
 
 
 

@@ -42,7 +42,7 @@
                 <div class="passwordTitle">
                     <label class="passwordText">비밀번호</label>
                 </div>
-				<input type="hidden" name="memberEmail" value="${memberEmail}">
+				<input type="hidden" name="email" value="${memberEmail}">
                 <div style="position: relative;">
                     <input class="passwordInput" name="password" type="password" placeholder="비밀번호를 입력해주세요.">
                     <button class="eyeButton">

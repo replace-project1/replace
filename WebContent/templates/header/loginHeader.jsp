@@ -49,7 +49,7 @@
                     </li>
                 </ul>
        <c:choose>
-		<c:when test="${not empty sessionScope.memberEmail}">
+		<c:when test="${not empty sessionScope.id}">
                 <aside class="Aside_className isLoggedIn">
                     <ul>
                        <!--  <li>
