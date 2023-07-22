@@ -8,8 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.replace.Result;
+import com.replace.bookmark.controller.BookmarkController;
 
-public class bookmarkFrontController extends HttpServlet {
+public class BookmarkFrontController extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,6 +27,9 @@ public class bookmarkFrontController extends HttpServlet {
 		 * } else if(target.equals("checkEmailOk")) { result = new
 		 * CheckEmailOkController().execute(req, resp);
 		 */
+		if (target.equals("bookmarkList")) {
+			result = new BookmarkController().execute(req, resp);
+		}
 		
 		if(result != null) {
 			if(result.isRedirect()) {
