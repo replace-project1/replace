@@ -4,11 +4,11 @@
 <!-- 쿼리문 작성페이지 -->
 <mapper namespace="member">
 
-<!--  	<insert id="join">
+<insert id="insert">
 		insert into tbl_member
-		(member_name, member_id, member_password, member_email, member_phone_number)
+		( id, member_name,member_email, member_password,  member_phone_number)
 		values( #{memberName},#{memberId}, #{memberPassword}, #{memberEmail} , #{memberPhoneNumber} )
-	</insert> -->
+	</insert>
 	
 	
 	<select id="selectEmail" resultType="string">

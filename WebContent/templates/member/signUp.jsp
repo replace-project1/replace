@@ -365,7 +365,7 @@
                     </div>
                     <!-- 가입하기 -->
                     <div class="footerbox">
-                        <button class="confirm">
+                        <button class="confirm" >
                             <span class="confirmText">가입하기</span>
                         </button>
                     </div>
@@ -379,7 +379,7 @@
         $(document).ready(function () {
             $('.telinput1').on('input', function () {
                 var tel = $(this).val();
-                var telRegex = /^\d{9}$/;
+                var telRegex = /^\d{11}$/;
 
                 if (!telRegex.test(tel)) {
                     $(this).css("border-color", "red");

@@ -15,7 +15,7 @@ public class MemberDAO {
 	}
 	
 //	회원가입
-	public void join(MemberVO memberVO) {
+	public void insert(MemberVO memberVO) {
 		sqlSession.insert("member.insert", memberVO);
 	}
 	
@@ -48,7 +48,7 @@ public class MemberDAO {
 	public MemberVO selectMember(String memberId) {
 		return sqlSession.selectOne("member.myPage", memberId);
 	}
-	
+
 }
 
 
