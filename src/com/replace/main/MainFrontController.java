@@ -26,13 +26,20 @@ public class MainFrontController extends HttpServlet {
         // memberId 값을 적절히 설정
         HttpSession session = req.getSession();
         memberId = (String) session.getAttribute("memberId");
-        req.setAttribute("memberId", memberId);
+ 
 
         if (target.equals("main")) {
             result = new Result();
             result.setPath("/main/index.jsp");
         }
 
+        if (memberId != null) {
+            memberVO = memberDAO.selectMember(memberId); 
+            if (memberVO != null) {
+                req.setAttribute("memberId", memberId);
+            }
+        }
+        
         if (result != null) {
             if (result.isRedirect()) {
                 resp.sendRedirect(result.getPath());
