@@ -29,7 +29,7 @@ public class LoginController implements Action {
 			
 //			쿠키를 하나씩 가져와서
 			for(Cookie cookie: cookies){
-//				KEY값이 memberIdentification라면 담겨있는 회원 아이디 가져오기
+//				KEY값이 memberEmail 라면 담겨있는 회원 이메일 가져오기
 				if(cookie.getName().equals("memberEmail")) {
 					memberEmail = cookie.getValue();
 				}
@@ -47,7 +47,7 @@ public class LoginController implements Action {
 //		쿠키에 사용자 이메일 있다면
 		if(memberEmail != null) {
 //			로그인으로 쿠키에 있던 아이디와 비밀번호 전송
-			req.setAttribute("memberIdentification", memberEmail);
+			req.setAttribute("memberEmail", memberEmail);
 			req.setAttribute("memberPassword", memberPassword);
 			result.setPath("loginOk.member");
 		}

@@ -17,9 +17,12 @@ public class LoginOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
+		System.out.println("들어옴");
 //		화면에서 사용자가 직접 form태그의 input에 아이디와 비밀번호를 작성했을 때
 		String memberEmail = req.getParameter("email");
+		System.out.println("input태그에 이메일 입력"+memberEmail);
 		String memberPassword = req.getParameter("password");
+		System.out.println("input태그에 비밀번호 입력"+memberPassword);
 		Long id = 0L;
 		HttpSession session = req.getSession();
 		System.out.println("세션저장이 된거니?"+session);

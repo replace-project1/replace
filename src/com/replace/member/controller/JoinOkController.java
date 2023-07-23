@@ -15,7 +15,9 @@ public class JoinOkController implements Action{
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		MemberDAO memberDAO = new MemberDAO();
+		System.out.println(memberDAO);
 		MemberVO memberVO = new MemberVO();
+		System.out.println(memberVO);
 		Result result = new Result();
 		
 //		사용자가 화면에서 입력한 값을 전부 받아온다.
@@ -50,7 +52,7 @@ public class JoinOkController implements Action{
 //		login.member로 이동하겠다는 의미는 Controller가 필요한 페이지라는 뜻이다.
 //		로그인 페이지 이동 전, 쿠키를 검사해서 자동 로그인을 진행해야 한다.
 		result.setPath(req.getContextPath() + "/loginEmail.member");
-		
+		System.out.println(result);
 		return result;
 	}
 }

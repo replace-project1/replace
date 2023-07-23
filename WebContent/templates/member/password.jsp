@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>password</title>
-    <link rel="stylesheet" href="../../static/css/member/password.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/password.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div style="width: 100%;">
-                    <button class="loginNext" id="sendPassword" class="passwordSend">
+                    <button class="loginNext" id="sendPassword">
                     다음</button>
                 </div>
                 <button class="passwordManipulation">
