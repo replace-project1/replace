@@ -16,8 +16,8 @@
 		<div id="header">
 			<div class="header__wrapper common__wrapper">
 				<div class="header__nav__logo">
-					<img src="../../static/images/logo.png" height="70px" width="130px" id="logo" alt="로고예정"
-						style="cursor: pointer">
+				 <img alt="" src="${pageContext.request.contextPath}/static/images/horizontal-logo.png" width="120px" height="50px"
+					style="cursor: pointer">
 				</div>
 				<nav class="header__nav__wrapper common__wrapper hide__sm">
 					<a class="header__nav__link" href="">Replace 홈</a>
@@ -205,7 +205,7 @@
 		<div class="footer__wrapper common__wrapper hide__sm">
 			<div class="footer__section" style="height: 66px">
 				<div class="footer__section__links">
-					<img src="../../static/images/logo.png" width="120px" height="80px" alt="로고 예정"> <a
+					 <img alt="" src="${pageContext.request.contextPath}/static/images/horizontal-logo.png" width="120px" height="50px"> <a
 						href="https://help.wanted.co.kr/hc/ko/articles/360035844551">이용약관</a>
 					<a href="https://help.wanted.co.kr/hc/ko/">고객센터</a> <a
 						href="https://wantedlab.irpage.co.kr/">투자 정보</a> <a
